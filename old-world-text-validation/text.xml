@@ -1561,7 +1561,7 @@ Peut être développée avec un link(SPECIALISTCLASS_MINER) qui augmentera link(
 	</Entry>
 	<Entry>
 		<zType>TEXT_GUIDE_TECH_POLIS</zType>
-		<fr>La polis est utile pour défendre et agrandir vos cités. Construire des link(PROJECT_WALLS) augmente les link(CONCEPT_HP) d'une link(CONCEPT_CITY) et peut réduire le link(YIELD_DISCONTENT,1) si vous laissez une unité de la même link(CONCEPT_FAMILY) entre les murs de la cité. Les link(IMPROVEMENT_HAMLET,2) sont des link(CONCEPT_IMPROVEMENT,2) link(CONCEPT_URBAN,4) et peuvent être construits partout sur votre link(CONCEPT_TERRITORY). Avec le temps, ils évolueront en link(IMPROVEMENT_VILLAGE,2) puis en link(IMPROVEMENT_TOWN,2) en consommant de lalink(YIELD_FOOD,1), mais en produisant des rendements améliorés d'link(YIELD_MONEY,1) surtout lorsqu'ils sont construits sur votre link(CONCEPT_TRADE_NETWORK).</fr>
+		<fr>La polis est utile pour défendre et agrandir vos cités. Construire des link(PROJECT_WALLS) augmente les link(CONCEPT_HP) d'une link(CONCEPT_CITY) et peut réduire le link(YIELD_DISCONTENT,1) si vous laissez une unité de la même link(CONCEPT_FAMILY) entre les murs de la cité. Les link(IMPROVEMENT_HAMLET,2) sont des link(CONCEPT_IMPROVEMENT,2) link(CONCEPT_URBAN,4) et peuvent être construits partout sur votre link(CONCEPT_TERRITORY). Avec le temps, ils évolueront en link(IMPROVEMENT_VILLAGE,2) puis en link(IMPROVEMENT_TOWN,2) en consommant de la link(YIELD_FOOD,1), mais en produisant des rendements améliorés d'link(YIELD_MONEY,1) surtout lorsqu'ils sont construits sur votre link(CONCEPT_TRADE_NETWORK).</fr>
 	</Entry>
 	<Entry>
 		<zType>TEXT_GUIDE_TECH_SOVEREIGNTY</zType>
