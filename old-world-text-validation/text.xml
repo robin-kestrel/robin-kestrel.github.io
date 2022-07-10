@@ -13,8 +13,17 @@
 		<ru>Анти-{lowercase:link(UNITTRAIT_INFANTRY,0)} II~Анти-{lowercase:link(UNITTRAIT_INFANTRY,1)} II~Анти-{lowercase:link(UNITTRAIT_INFANTRY,2)} II~Анти-{lowercase:link(UNITTRAIT_INFANTRY,3)} II~Анти-{lowercase:link(UNITTRAIT_INFANTRY,4)} II~Анти-{lowercase:link(UNITTRAIT_INFANTRY,5)} II</ru>
 	</Entry>
 	<Entry>
+		<zType>TEXT_EVENTCITY_GREAT_MERCHANT</zType>
+		<ja>link(COURTIER_MERCHANT)が{CITY}から現れた</ja>
+	</Entry>
+	<Entry>
 		<zType>TEXT_EVENTOPTION_APOSTATE_LEADER_1</zType>
 		<fr>Faire de la religion {RELIGION-3,3} la nouvelle link(CONCEPT_STATE_RELIGION) {PLAYER-1,2}.</fr>
+		<ru>Провозгласить {lowercase:{RELIGION-3,3}} новой {lowercase:link(CONCEPT_STATE_RELIGION,4)} {PLAYER-1,1}.</ru>
+	</Entry>
+	<Entry>
+		<zType>TEXT_EVENTOPTION_THE_OTHER_RELIGION_0</zType>
+		<ru>Провозгласить {lowercase:{RELIGION-2,3}} новой {lowercase:link(CONCEPT_STATE_RELIGION,4)}. </ru>
 	</Entry>
 	<Entry>
 		<zType>TEXT_EVENTOPTION_CONVERT_BAD_BLOOD_1</zType>
@@ -81,6 +90,10 @@
 		<fr>Nommer immédiatement {CHARACTER-2} comme link(COURTIER_MINISTER). Ne lésinons pas sur les moyens !</fr>
 	</Entry>
 	<Entry>
+		<zType>TEXT_EVENTOPTION_FRONTIER_WALL_FORTS</zType>
+		<ru>Мы встретим врага в новом {lowercase:link(IMPROVEMENT_FORT,5)}.</ru>
+	</Entry>
+	<Entry>
 		<zType>TEXT_EVENTOPTION_WONDER_A_SPIRITUAL_CROSSROADS_OPTION_1</zType>
 		<ja>{RELIGION-2}の協会となる。</ja>
 	</Entry>
@@ -99,8 +112,16 @@
 		<ru>Бросить {lowercase:link(COUNCIL_SPYMASTER,3)} в темницу, а ключ расплавить.</ru>
 	</Entry>
 	<Entry>
+		<zType>TEXT_EVENTOPTION_BEWARE_OPTION_2</zType>
+		<ru>Поручить поиски {lowercase:link(COUNCIL_SPYMASTER,2)}.</ru>
+	</Entry>
+	<Entry>
 		<zType>TEXT_EVENTOPTION_TUTORIAL_LUXURIES_1</zType>
 		<fr>J'enverrai des link(CONCEPT_LUXURY) aux link(CONCEPT_FAMILY), aux cités et aux link(CONCEPT_TRIBE,2) quand j'y penserai, plus tard.</fr>
+	</Entry>
+	<Entry>
+		<zType>TEXT_EVENTOPTION_NEW_AMBITION_FOUR_GARRISON_3</zType>
+		<ja>我々の権治権は、4つの立派なlink(IMPROVEMENT_GARRISON_3,2)で例証されるだろう。</ja>
 	</Entry>
 	<Entry>
 		<zType>TEXT_EVENTOPTION_NEXT_GENERATION_1_CITIES</zType>
@@ -116,11 +137,17 @@
 	</Entry>
 	<Entry>
 		<zType>TEXT_EVENTOPTION_INFLUENCE_SPOUSE_MISMATCH</zType>
+		<fr>J'essaierai d'être moins {p.is_sub.S0=SUBJECT_ZEALOT:{choice_GL:moralisateur:moralisatrice}:p.is_sub.S0=SUBJECT_SCHOLAR:littéraire:p.is_sub.S0=SUBJECT_ORATOR:{choice_GL:incohérent:incohérente}:p.is_sub.S0=SUBJECT_DIPLOMAT:{choice_GL:bavard:bavarde}:p.is_sub.S0=SUBJECT_SCHEMER:perfide:p.is_sub.S0=SUBJECT_HERO:{choice_GL:vantard:vantarde}:p.is_sub.S0=SUBJECT_TACTICIAN:stratégique:p.is_sub.S0=SUBJECT_COMMANDER:stratégique:p.is_sub.S0=SUBJECT_BUILDER:{choice_GL:minutieux:minutieuse}:p.is_sub.S0=SUBJECT_JUDGE:critique:} à vos côtés.</fr>
 		<ja>あなたの周りでは、あまり {p.is_sub.S0=SUBJECT_ZEALOT:説教臭くならない:p.is_sub.S0=SUBJECT_SCHOLAR:本を読まない:p.is_sub.S0=SUBJECT_ORATOR:長く話さない:p.is_sub.S0=SUBJECT_DIPLOMAT:おしゃべりにならない:p.is_sub.S0=SUBJECT_SCHEMER:コソコソしない:p.is_sub.S0=SUBJECT_HERO:boastful:p.is_sub.S0=SUBJECT_TACTICIAN:戦術的にならない:p.is_sub.S0=SUBJECT_COMMANDER:戦術的にならない:p.is_sub.S0=SUBJECT_BUILDER:物をいじらない:p.is_sub.S0=SUBJECT_JUDGE:批判的にならない:退屈にならない}ように気を付けよう。</ja>
+	</Entry>
+	<Entry>
+		<zType>TEXT_EVENTOPTION_FAMILY_FIRST_YES</zType>
+		<de>{G1:Er soll der:Sie soll die} neue link(COUNCIL_CHANCELLOR,{G1}) werden.</de>
 	</Entry>
 	<Entry>
 		<zType>TEXT_EVENTOPTION_MASTER_OF_WHISPERS_IMPRISION</zType>
 		<es>Es hora de librarnos de las mentiras de {G1:nuestro:nuestra} link(COUNCIL_SPYMASTER,{G1}).</es>
+		<de>Zeit, dass wir uns von {G1:unserem:unserer} link(COUNCIL_SPYMASTER,{G1}) trennen.</de>
 	</Entry>
 	<Entry>
 		<zType>TEXT_EVENTOPTION_A_NEW_GENERAL_MELEE</zType>
@@ -224,6 +251,14 @@ link(COUNCIL_AMBASSADOR) {CHARACTER-SHORT-2} интересуется, что и
 Al verte pasar, se acercan a saludarte.</es>
 	</Entry>
 	<Entry>
+		<zType>TEXT_EVENTSTORY_CONTACT_TROUBLE_ON_THE_ROAD</zType>
+		<ja><![CDATA[探索中、斥候兵たちが雷雨に見舞われた。どうしようもないほど嵐に打ちのめされた彼らのもとに、突然、見知らぬ旅人たちが近づいてきた。最初は緊張をはらんだこう着状態だったが、その外国の者たちは{PLAYER-3}という遠い国から来たと話し、斥候兵たちを助けてくれた。
+
+この救世主たちは、自分たちは{RELIGION-2}の信者であり、その宗教では、<p.is_sub.S2=SUBJECT_ZOROASTRIANISM>アフラ・マズダへの勇気と忠誠を奨励している<p=SUBJECT_CHRISTIANITY>困っている人を助けることを実践している<p=SUBJECT_JUDAISM>親切や慈善的援助を奨励している<p=SUBJECT_MANICHAEISM>他者への配慮を実践している<else>親切な行為を奨励している<end>のだと説明した。 彼らは斥候兵たちを近くの廃墟に連れて行き、嵐が去るまで、共に避難したのだった。
+
+この親切な外国人たちの話を聞いて、あなたはどう反応する？]]></ja>
+	</Entry>
+	<Entry>
 		<zType>TEXT_EVENTSTORY_CONVERT_SELF_EARLY_TEMPTATION</zType>
 		<de>{CHARACTER-3} sieht, wie Ihr eifrig die religiösen Praktiken {RELIGION-1,1} studiert. {G3:Er:Sie} schleicht sich an Euch heran, fordert Euch auf, aufzuhören, und fragt, warum Ihr Euch damit abmüht. „{RELIGION-1} wird schwächer. {PLAYER-0} benötigt {G0:einen starken Anführer:eine starke Anführerin} {RELIGION-2,1}, um unsere Zukunft zu sichern. Bitte denkt darüber nach.“
 
@@ -318,6 +353,12 @@ Por ello, se ha ofrecido a reclutar a una banda de link(UNIT_WARRIOR,2) de los m
 {CHARACTER-2} ist {G2:der Anführer:die Anführerin} der Gladiatoren, und obwohl {G2:er:sie} von ungebildeter Herkunft ist, respektiert {G2:er:sie} Eure Macht. {G2:Er:Sie} wirft sich vor dem Thron nieder. „Lasst uns für Euch kämpfen.“</de>
 	</Entry>
 	<Entry>
+		<zType>TEXT_EVENTSTORY_MARRIAGE_OFFER_FAMILY_FAVOR</zType>
+		<fr>{CHARACTER-1} se présente aujourd’hui à vous avec une proposition. Marier votre {RELATIVE-0} {CHARACTER-0} à {CHARACTER-2}.
+
+« À cause d'événements dont je vous parlerai plus tard, nous débarrasser {G2:de lui:d’elle} serait une faveur personnelle que vous me feriez. » {G1:dit-il:dit-elle} pour conclure.</fr>
+	</Entry>
+	<Entry>
 		<zType>TEXT_EVENTSTORY_LUXURY_SEEKERS</zType>
 		<es>Has notado que ciertos miembros de la familia {FAMILY-0}, que antes eran muy cordiales contigo, se han vuelto un tanto distantes ante ti. Un día, después de la reunión del consejo, se te acerca {CHARACTER-3} justo cuando tu mente estaba intentando recopilar las últimas interacciones con los {FAMILY-0,1} en busca de las causas posibles para su descontento contigo.
 
@@ -328,6 +369,10 @@ Por ello, se ha ofrecido a reclutar a una banda de link(UNIT_WARRIOR,2) de los m
 		<fr>Un cavalier chevauchant un cheval pâle arrive à la capitale avec de mauvaises nouvelles. Il vient pour annoncer la terrible disparition {CHARACTER-SHORT-2,1}. D’un ton monocorde, il raconte la mort douloureuse et indigne de {G2:l'héritier {PLAYER-0,3}:l’héritière {PLAYER-0,7}} avec des détails macabres.
 
 {CHARACTER-SHORT-0} vous en veut énormément. Avec votre aide, {CHARACTER-SHORT-2} aurait pu survivre à cette épreuve. Hélas, nous n'avons rien fait et maintenant {CHARACTER-SHORT-2} est {G2:mort:morte}.</fr>
+	</Entry>
+	<Entry>
+		<zType>TEXT_EVENTSTORY_A_TOAST_DUEL_WIN</zType>
+		<es>Después de una gloriosa justa, tu link(CONCEPT_GENERAL), {CHARACTER-SHORT-1}, perece al amanecer a causa de la severidad de sus heridas.</es>
 	</Entry>
 	<Entry>
 		<zType>TEXT_EVENTSTORY_FREED_SLAVE</zType>
@@ -352,6 +397,23 @@ Cuando se acercan las vacaciones, {CHARACTER-SHORT-0} desea pasar ese tiempo de 
 		<ru>Ранним утром к вам приходит {CHARACTER-2}. {G2:Он:Она} говорит, что развод навлечет гнев {G2:его:ее} {lowercase:link(CONCEPT_FAMILY,1)} на вас обоих. Вместо того, чтобы разрывать брак, {G2:он:она} предлагает взять {G0:вашего любовника:вашу любовницу} {CHARACTER-0,3} {G0:вторым мужем:второй женой}.
 
 Вы согласны на это?</ru>
+	</Entry>
+	<Entry>
+		<zType>TEXT_EVENTSTORY_LEADER_LOVED_MOCKING_LAUGHTER</zType>
+		<de>„ ... und dann sagte ich, dass sein Gesicht so aussieht, als wäre er ein Dieb und ein Mörder – denn er muss ein Pferd getötet und ihm den Arsch gestohlen haben!“
+
+Eure Geschichte findet mit der verbalen Demütigung eines Rivalen ein Ende – sehr zur Erheiterung der Freunde, die Euch lauschen. {CHARACTER-SHORT-1} scheint besonders begeistert zu sein, denn {G1:er:sie} tritt mit hämisch glänzenden Augen dicht an Euch heran.
+
+„Eure Zunge ist schärfer als jede Klinge, {CHARACTER-SHORT-0}. Aber habt Ihr in Eurem Herzen Platz für {G1:einen Mann:eine Frau} von gleichem Verstand?“</de>
+	</Entry>
+	<Entry>
+		<zType>TEXT_EVENTSTORY_LEADER_LOVED_FISHER</zType>
+		<zh-TW>「──然後釣竿硬生生斷成兩截！那是我釣過他媽最大的魚，卻讓牠跑了！」你如此為最近的釣魚故事結尾。幾名同伴表示惋惜，{CHARACTER-SHORT-1}卻站了出來。
+
+{G1:他:她}說：「你的釣竿怎麼會這樣，太可惜了！我能做什麼來讓你拋開這件事嗎？」</zh-TW>
+		<zh-CN>「──然后钓竿硬生生断成两截！那是我钓过他妈最大的鱼，却让它跑了！」你如此为最近的钓鱼故事结尾。几名同伴表示惋惜，{CHARACTER-SHORT-1}却站了出来。
+
+{G1:他:她}说：「你的钓竿怎么会这样，太可惜了！我能做什么来让你抛开这件事吗？」</zh-CN>
 	</Entry>
 	<Entry>
 		<zType>TEXT_EVENTSTORY_LEADER_LOVED_EXTRAVAGANT_GIFT</zType>
@@ -382,6 +444,15 @@ Cuando se acercan las vacaciones, {CHARACTER-SHORT-0} desea pasar ese tiempo de 
 —{CHARACTER-SHORT-0}, tengo que confesarte cómo me siento. Verás, jamás podría resistirme a {G0:un hombre:una mujer} <p.is_sub.S0=SUBJECT_ZEALOT>tan {G0:entregado:entregada} a la fe<p=SUBJECT_SCHOLAR>tan {G0:sabio:sabia}<p=SUBJECT_ORATOR>con semejante don de la palabra<p=SUBJECT_DIPLOMAT>tan {G0:habilidoso:habilidosa} a la hora de comprender y comprometerse<p=SUBJECT_SCHEMER>tan {G0:astuto:astuta}<p=SUBJECT_HERO>con semejante fama<p=SUBJECT_TACTICIAN>con tanta pericia en el campo de batalla<p=SUBJECT_COMMANDER>con tanto don para la estrategia<p=SUBJECT_BUILDER>con semejante habilidad creativa<p=SUBJECT_JUDGE>con tan acertado juicio<else>tan {G0:atractivo:atractiva}<end>. Sé que es algo que puede haberte pillado por sorpresa, así que te daré algo de tiempo para que pienses acerca de lo que te acabo de decir.
 
 Te sonríe con cariño y se aleja.]]></es>
+		<ja><![CDATA[{CHARACTER-SHORT-1}から内密に話をしたいとの誘いを受けた。{G1:彼:彼女}はあなたを静かな一角へと連れ入れるとこう言った。「{CHARACTER-SHORT-0}、私の気持ちをどうかお聞きください。私は、これほどの<p.is_sub.S1=SUBJECT_ZEALOT>強い信仰<p=SUBJECT_SCHOLAR>深い知識<p=SUBJECT_ORATOR>弁舌の才<p=SUBJECT_DIPLOMAT>理解と歩み寄りの力<p=SUBJECT_SCHEMER>卓越した抜け目のなさ<p=SUBJECT_HERO>名声<p=SUBJECT_TACTICIAN>戦場での武勇<p=SUBJECT_COMMANDER>戦略の才<p=SUBJECT_BUILDER>創造力<p=SUBJECT_JUDGE>公正な判断力<else>美貌<end>を備えた{G0:男性:女性}に魅力を感じずにはいられないのです。突然のことで驚かれていることと思います。よくお考えになられてからご返事をいただきたく思います」
+
+{G1:彼:彼女}は優しい微笑みを残して立ち去った。]]></ja>
+	</Entry>
+	<Entry>
+		<zType>TEXT_EVENTSTORY_PAWS_AND_TAILS</zType>
+		<de>Ihr befindet Euch in einer Zwickmühle. Euer Affe und Euer Hund quälen sich gegenseitig und versetzen die Dienerschaft mit ihren verrückten Eskapaden in Angst und Schrecken. Viele der Palastbediensteten haben {G1:den:die} link(COUNCIL_CHANCELLOR,{G1}) um andere Aufgaben gebeten, und {G1:er:sie} bittet seinerseits darum, dass Ihr Euch um die Tiere kümmert.
+
+„In diesem Reich ist einfach nicht genug Platz für diese beiden verrückten Viecher.“ sagt {CHARACTER-1} und stößt einen verärgerten Seufzer aus. „Ihr müsst Euch entscheiden, welches der Tiere Ihr loswerden wollt. Sonst müsst Ihr Euch einen neuen Kanzler suchen.“</de>
 	</Entry>
 	<Entry>
 		<zType>TEXT_EVENTSTORY_VENGEFUL_TO_PLOTTING</zType>
@@ -409,6 +480,12 @@ Los guardias se abalanzan sobre {CHARACTER-SHORT-1} y logran {G1:atraparlo:atrap
 Кто, по-вашему, прав? ]]></ru>
 	</Entry>
 	<Entry>
+		<zType>TEXT_EVENTSTORY_BLESSING_OF_ATHENA</zType>
+		<fr>{CHARACTER-2} entre dans la cour, accompagné par une mage aux cheveux gris et par des femmes réfléchies {CITY-2,1} et se met à plat ventre devant le trône.
+
+« Que la sagesse guide votre règne, {TITLE-3}. Nous sommes venus vous demander d'assister à la consécration du link(IMPROVEMENT_SHRINE_ATHENA) Votre présence apporterait joie et bonté à cette célébration. »</fr>
+	</Entry>
+	<Entry>
 		<zType>TEXT_EVENTSTORY_DISPLEASURE_OF_ASHUR</zType>
 		<ru>Раскаты грома наполняют дворец, небо сияет молниями, в тронный зал врывается {CHARACTER-2}, грозно вздымая кулак в вашу сторону:
 
@@ -418,7 +495,7 @@ Los guardias se abalanzan sobre {CHARACTER-SHORT-1} y logran {G1:atraparlo:atrap
 		<zType>TEXT_EVENTSTORY_DISPLEASURE_OF_MARDUK</zType>
 		<ru>Раскаты грома наполняют дворец, небо сияет молниями, в тронный зал врывается {CHARACTER-2}, грозно вздымая кулак в вашу сторону:
 
-«Слышишь, то есть гнев Мардука! Ты {G3:дерзнул:дерзнула} бросить ему вызов, так пожинай же плоды тщеславия своего!» Стражники пытаются усмирить {G2:разгоряченного гостя:разгоряченную гостью}. «Пади же на колени пока не поздно. В {CITY-0,5} у linkIMPROVEMENT_SHRINE_MARDUK,1) проси прощения у царя богов!»</ru>
+«Слышишь, то есть гнев Мардука! Ты {G3:дерзнул:дерзнула} бросить ему вызов, так пожинай же плоды тщеславия своего!» Стражники пытаются усмирить {G2:разгоряченного гостя:разгоряченную гостью}. «Пади же на колени пока не поздно. В {CITY-0,5} у link(IMPROVEMENT_SHRINE_MARDUK,1) проси прощения у царя богов!»</ru>
 	</Entry>
 	<Entry>
 		<zType>TEXT_EVENTSTORY_DISPLEASURE_OF_ZEUS</zType>
@@ -429,6 +506,12 @@ Los guardias se abalanzan sobre {CHARACTER-SHORT-1} y logran {G1:atraparlo:atrap
 	<Entry>
 		<zType>TEXT_EVENTSTORY_ADOPT_RELIGION_PAGAN</zType>
 		<ru>К дворцу стекаются последователи {lowercase:{RELIGION-0,1}}. Они просят вас стать их {choice_GL:священным правителем:священной правительницей}, приняв {lowercase:link(CONCEPT_PAGAN_RELIGION,3)}. Вы готовы признать {lowercase:{RELIGION-0,3}} {lowercase:link(CONCEPT_STATE_RELIGION,4)}? Это снизит {lowercase:link(YIELD_DISCONTENT,3)} в городах с {lowercase:{RELIGION-0,4}} населением и улучшит отношения с семьями, принявшими {lowercase:{RELIGION-0,3}}.</ru>
+	</Entry>
+	<Entry>
+		<zType>TEXT_EVENTSTORY_AGE_OF_WONDERS</zType>
+		<zh-CN><![CDATA[过去从来没有城市像{CITY-1}或{CITY-2}一样伟大，未来也不会有！我们帝国的宝地上满是不可胜数的奇观。住在遥远沙漠和冻原的部落都流传着对我国壮丽景致的惊叹。来自已知世界的大亨和大使纷纷惊艳于{CITY-1}的<p.is_sub.S1=SUBJECT_CITY_PYRAMIDS>link(IMPROVEMENT_PYRAMIDS)<p=SUBJECT_CITY_GREAT_ZIGGURAT>link(IMPROVEMENT_GREAT_ZIGGURAT)<p=SUBJECT_CITY_ORACLE>link(IMPROVEMENT_ORACLE)<p=SUBJECT_CITY_HANGING_GARDENS>link(IMPROVEMENT_HANGING_GARDENS)<p=SUBJECT_CITY_NECROPOLIS>link(IMPROVEMENT_NECROPOLIS)<p=SUBJECT_CITY_ISHTAR_GATE>link(IMPROVEMENT_ISHTAR_GATE)<p=SUBJECT_CITY_LIGHTHOUSE>link(IMPROVEMENT_LIGHTHOUSE)<p=SUBJECT_CITY_APADANA>link(IMPROVEMENT_APADANA)<p=SUBJECT_CITY_MAUSOLEUM>link(IMPROVEMENT_MAUSOLEUM)<p=SUBJECT_CITY_ACROPOLIS>link(IMPROVEMENT_ACROPOLIS)<p=SUBJECT_CITY_COLOSSUS>link(IMPROVEMENT_COLOSSUS)<p=SUBJECT_CITY_MUSAEUM>link(IMPROVEMENT_MUSAEUM)<p=SUBJECT_CITY_CIRCUS_MAXIMUS>link(IMPROVEMENT_CIRCUS_MAXIMUS)<p=SUBJECT_CITY_PANTHEON>link(IMPROVEMENT_PANTHEON)<p=SUBJECT_CITY_HAGIA_SOPHIA>link(IMPROVEMENT_HAGIA_SOPHIA)<p=SUBJECT_CITY_VIA_RECTA_SOUK>link(IMPROVEMENT_VIA_RECTA_SOUK)<else>奇观<end>、{CITY-2}的<p.is_sub.S2=SUBJECT_CITY_VIA_RECTA_SOUK>link(IMPROVEMENT_VIA_RECTA_SOUK)<p=SUBJECT_CITY_HAGIA_SOPHIA>link(IMPROVEMENT_HAGIA_SOPHIA)<p=SUBJECT_CITY_PANTHEON>link(IMPROVEMENT_PANTHEON)<p=SUBJECT_CITY_CIRCUS_MAXIMUS>link(IMPROVEMENT_CIRCUS_MAXIMUS)<p=SUBJECT_CITY_MUSAEUM>link(IMPROVEMENT_MUSAEUM)<p=SUBJECT_CITY_COLOSSUS>link(IMPROVEMENT_COLOSSUS)<p=SUBJECT_CITY_ACROPOLIS>link(IMPROVEMENT_ACROPOLIS)<p=SUBJECT_CITY_MAUSOLEUM>link(IMPROVEMENT_MAUSOLEUM)<p=SUBJECT_CITY_APADANA>link(IMPROVEMENT_APADANA)<p=SUBJECT_CITY_LIGHTHOUSE>link(IMPROVEMENT_LIGHTHOUSE)<p=SUBJECT_CITY_ISHTAR_GATE>link(IMPROVEMENT_ISHTAR_GATE)<p=SUBJECT_CITY_NECROPOLIS>link(IMPROVEMENT_NECROPOLIS)<p=SUBJECT_CITY_HANGING_GARDENS>link(IMPROVEMENT_HANGING_GARDENS)<p=SUBJECT_CITY_ORACLE>link(IMPROVEMENT_ORACLE)<p=SUBJECT_CITY_GREAT_ZIGGURAT>link(IMPROVEMENT_GREAT_ZIGGURAT)<p=SUBJECT_CITY_PYRAMIDS>link(IMPROVEMENT_PYRAMIDS)<else>奇观<end>，以及两城人民的自豪。
+
+我们该如何渲染{PLAYER-3}作为奇观帝国的光荣名声？]]></zh-CN>
 	</Entry>
 	<Entry>
 		<zType>TEXT_EVENTSTORY_COIN_DEBASEMENT_MONETARY_REFORM</zType>
@@ -449,6 +532,14 @@ Los guardias se abalanzan sobre {CHARACTER-SHORT-1} y logran {G1:atraparlo:atrap
 Все ждут вашего указа.</ru>
 	</Entry>
 	<Entry>
+		<zType>TEXT_EVENTSTORY_WONDER_HAGIA_SOPHIA</zType>
+		<es>Hemos acabado...
+
+link(IMPROVEMENT_HAGIA_SOPHIA) se erigirá para dar testimonio de nuestro pueblo por siempre jamás; simbolizará lo que hemos logrado hasta la fecha y la gloria que aún está por llegar. Es la primera estructura en usar una pechina, una técnica revolucionaria que permite que la cúpula se sostenga sin necesidad de pilares.
+
+Su popularidad es tal que otras religiones ya están adoptando esta técnica en sus propios templos, para que también tengan una imagen sagrada y divina que perdure.</es>
+	</Entry>
+	<Entry>
 		<zType>TEXT_EVENTSTORY_NECROPOLIS</zType>
 		<de>Die link(IMPROVEMENT_NECROPOLIS) in {CITY-1} wurde fertiggestellt. Nun ist es an der Zeit, {G0:unseren letzten Herrscher:unsere letzte Herrscherin} beizusetzen. {CHARACTER-0} wird dort {G0:seinen:ihren} Frieden finden.
 
@@ -460,6 +551,18 @@ Wie wollt Ihr {G0:seinem:ihrem} Leben gedenken?
 		<fr>Un pauvre fermier âgé arrive à la cour. Il porte une lame faite d'un métal que vous ne reconnaissez pas, couverte de symboles exotiques. Il a découvert un réseau de profondes cavernes sur ses terres et il suppose que cette lame serait un cadeau digne d'{choice_GL:un souverain:une souveraine}.
 
 Acceptez-vous l'épée ?</fr>
+	</Entry>
+	<Entry>
+		<zType>TEXT_EVENTSTORY_RELIGION_KINGDOM_OF_GOD</zType>
+		<es>Algunos miembros de la devoción link(RELIGION_CHRISTIANITY) han empezado a residir en uno de los templos en ruinas de la capital. Nos preocupa que crean en un futuro dirigente que deponga a los líderes terrenales y que funde «el Reino de Dios».
+
+La corte tiene ganas de saber si responderás y cómo lo harás.</es>
+	</Entry>
+	<Entry>
+		<zType>TEXT_EVENTSTORY_CHRISTIAN_CATHEDRALS</zType>
+		<ru>Набожные члены семьи {FAMILY-2,7} уже много недель оказывают давление на царских инженеров. Они требуют построить {lowercase:link(IMPROVEMENT_CATHEDRAL_CHRISTIANITY,3)}, где можно будет уместить растущее число последователей.
+
+Сопротивляться этому давлению?</ru>
 	</Entry>
 	<Entry>
 		<zType>TEXT_EVENTSTORY_RELATIONSHIP_PARANOID</zType>
@@ -497,11 +600,39 @@ A tu {G3:jefe:jefa} de espías {CHARACTER-SHORT-3} le entusiasma la noticia y co
 Les messagers {CHARACTER-SHORT-1,1} demandent une réponse.</fr>
 	</Entry>
 	<Entry>
+		<zType>TEXT_EVENTSTORY_INSURRECTION_SECRET_LOVERS</zType>
+		<es>Mientras investiga de qué manera puede volver a las gentes de {CITY-0} en contra de sus gobernantes, {CHARACTER-1} descubre algo: se ha visto a {CHARACTER-SHORT-3}, {G3:el joven heredero:la joven heredera} de {PLAYER-2}, {G3:acompañado:acompañada} de {G4:uno:una} de nuestros oligarcas, {CHARACTER-SHORT-4}. Parece ser que {G3:los:{G4:los:las}} dos jóvenes han estado manteniendo una relación en secreto; desafían, así, a sus link(CONCEPT_FAMILY,2) y a sus naciones.
+
+Podríamos hacer uso de este cotilleo con el fin de promover nuestros intereses en lo que concierne a {CITY-0}, aunque sería a expensas de nuestra relación con los {FAMILY-4}.</es>
+	</Entry>
+	<Entry>
+		<zType>TEXT_EVENTSTORY_TUTORIAL_HOLD_COURT_MISSION</zType>
+		<fr>Les missions link(MISSION_HOLD_COURT) permettent de gagner des link(YIELD_CIVICS,1) contre quelques link(YIELD_ORDERS) et link(YIELD_TRAINING,1). Elles peuvent également déclencher de nouveaux événements.
+
+Pour lancer une mission link(MISSION_HOLD_COURT) avec un dirigeant link(TRAIT_JUDGE_ARCHETYPE), cliquez sur l'icône icon(MISSION_HOLD_COURT), sur le panneau d'action à gauche lorsque votre dirigeant est sélectionné.
+
+Souhaitez-vous démarrer une mission link(MISSION_HOLD_COURT) ou la remettre à plus tard ?</fr>
+	</Entry>
+	<Entry>
 		<zType>TEXT_EVENTSTORY_INFLUENCE_LOCAL_AUTHORITY</zType>
 		<ru>Агентам в {CITY-2,5} срочно требуется наша помощь. Их попытки склонить на нашу сторону {CHARACTER-0,3} встретили ожесточенное сопротивление со стороны параноидального ближнего круга {lowercase:link(CONCEPT_GOVERNOR,1,{G0})}, в связи с чем их посадили за решетку по обвинению во лжи.
 
 В ярости от пренебрежения {G0:его:ее} местной властью, {CHARACTER-0} проводит ряд собраний, на которых поносит вас и весь {lowercase:{PLAYER-1,6}} престол. {G0:Он:Она} настраивает народ {CITY-2,1} против нас.
 </ru>
+	</Entry>
+	<Entry>
+		<zType>TEXT_EVENTSTORY_TUTORIAL_FAMILY_ANGRY_BY_CLASS</zType>
+		<es><![CDATA[Las link(CONCEPT_FAMILY,2) tienen link(CONCEPT_FAMILY_CLASS,2) que determinan qué leyes, link(CONCEPT_LUXURY) y qué otras condiciones requieren para ser felices.
+
+<p.is_sub.S0=SUBJECT_FAMILY_LANDOWNERS>Los link(FAMILYCLASS_LANDOWNERS) —como los indignados {FAMILY-0}— necesitan tierras, por supuesto, así que quieren tener más ciudades que cualquiera de tus link(CONCEPT_FAMILY,2) y les disgusta bastante tener menos que los demás. La opinión que tengan de ti mejorará si tienen acceso a link(CONCEPT_LUXURY) como las link(RESOURCE_OLIVE) y la link(RESOURCE_HONEY). Como siempre se necesita mano de obra en sus tierras, a los link(FAMILYCLASS_LANDOWNERS) les complace la ley de link(LAW_SERFDOM).<p=SUBJECT_FAMILY_CHAMPIONS>Los {FAMILY-0} se han enfadado contigo. A los link(FAMILYCLASS_CHAMPIONS) les gusta luchar y la opinión que tengan de ti mejorará si cuentan con el mayor ejército de entre todas tus link(CONCEPT_FAMILY,2). Del mismo modo, se sentirán ofendidos si les concedes menos unidades militares que a todos los demás. La opinión que tengan de ti mejorará si tienen acceso a link(CONCEPT_LUXURY) como el link(RESOURCE_WINE) y los link(RESOURCE_DYE). A los link(FAMILYCLASS_CHAMPIONS) les complace la ley de link(LAW_VOLUNTEERS).<p=SUBJECT_FAMILY_STATESMEN>A los link(FAMILYCLASS_STATESMEN) —como los indignados {FAMILY-0}— les preocupa, obviamente, los asuntos relacionados con la opinión publica y estatal; vigilan con cautela a los líderes que no contraen matrimonio. También buscan progresar; se verán consternados si su líder no nombra a miembros del consejo para compartir el poder. La opinión que tengan de ti mejorará si tienen acceso a link(CONCEPT_LUXURY) como las link(RESOURCE_PEARL) y el link(RESOURCE_WINE). A los link(FAMILYCLASS_STATESMEN) les complace que se haya aprobado una link(LAW_CONSTITUTION).<p=SUBJECT_FAMILY_PATRONS>A los link(FAMILYCLASS_PATRONS) —como los indignados {FAMILY-0}— les impresiona sobremanera que se construyan maravillas; no obstante, no toleran mucho que el líder se encuentre en plena niñez. La opinión que tengan de ti mejorará si tienen acceso a link(CONCEPT_LUXURY) como las link(RESOURCE_GEM) y el link(RESOURCE_INCENSE). A los link(FAMILYCLASS_PATRONS) también les complace la ley de link(LAW_CALLIGRAPHY).<p=SUBJECT_FAMILY_CLERICS>Los link(FAMILYCLASS_CLERICS) —como los indignados {FAMILY-0}— no desean otra cosa que no sea difundir su fe y, por lo tanto, les complace sobremanera liderar a más súbditos que el resto de las link(CONCEPT_FAMILY,2). Asimismo, no les agradará gobernar una ciudad que no cuente con una religión. La opinión que tengan de ti mejorará si tienen acceso a link(CONCEPT_LUXURY) como el link(RESOURCE_INCENSE) y la link(RESOURCE_LAVENDER). Que se aprobara la ley del link(LAW_DIVINE_RULE) también es algo que haría que adquieran una opinión más positiva de ti.<p=SUBJECT_FAMILY_SAGES>Los link(FAMILYCLASS_SAGES) —como los indignados {FAMILY-0}— desprecian a los líderes con cónyuges de procedencia tribal; además, les complace sobremanera que sus ciudades estén protegidas. La opinión que tengan de ti mejorará si tienen acceso a link(CONCEPT_LUXURY) como la link(RESOURCE_SALT) y la (RESOURCE_LAVENDER). A los link(FAMILYCLASS_SAGES) también les complace la ley de link(LAW_FREEDOM,1).<p=SUBJECT_FAMILY_TRADERS>Los link(FAMILYCLASS_TRADERS) —como los indignados {FAMILY-0}— te apreciarán más si te aseguras de que sus ciudades estén bien conectadas; no obstante, les desagradan las ciudades que hayan sufrido daños. Dicen que es malo para el negocio. La opinión que tengan de ti mejorará si tienen acceso a link(CONCEPT_LUXURY) como las link(RESOURCE_OLIVE) y las link(RESOURCE_PEARL). A los link(FAMILYCLASS_TRADERS) les complacen, como era de esperar, las leyes de link(LAW_TRADE_LEAGUE,1) y de link(LAW_MONETARY_REFORM,1).<p=SUBJECT_FAMILY_ARTISANS>Los link(FAMILYCLASS_ARTISANS) —como los indignados {FAMILY-0}— no soportan que se interrumpa la producción y, por lo tanto, les molesta sobremanera que haya link(CONCEPT_IMPROVEMENT,2) saqueados en sus territorios. La opinión que tengan de ti mejorará si tienen acceso a link(CONCEPT_LUXURY) como las link(RESOURCE_GEM) y los link(RESOURCE_DYE). A los link(FAMILYCLASS_ARTISANS) también les complace la ley de link(LAW_GUILDS,1).<p=SUBJECT_FAMILY_RIDERS>A los link(FAMILYCLASS_RIDERS) —como los indignados {FAMILY-0}— no les molestarán las unidades hostiles que se encuentren en sus territorios; por otro lado, la opinión que tengan de ti mejorará si tienen acceso a link(CONCEPT_LUXURY) como las link(RESOURCE_FUR) y la link(RESOURCE_SALT). Asimismo, a los link(FAMILYCLASS_RIDERS) les complace la ley del link(LAW_VASSALAGE).<p=SUBJECT_FAMILY_HUNTERS>Los link(FAMILYCLASS_HUNTERS) —como los indignados {FAMILY-0}— desean que sus unidades permanezcan cerca de sus hogares; la opinión que tengan de ti mejorará si tienen acceso a link(CONCEPT_LUXURY) como las link(RESOURCE_FUR) y la link(RESOURCE_HONEY). Asimismo, a los link(FAMILYCLASS_HUNTERS) les complace la ley de link(LAW_EXPLORATION,1).<else>A los artesanos les molesta sobremanera que haya link(CONCEPT_IMPROVEMENT,2) saqueados en sus territorios. La opinión que tengan de ti mejorará si tienen acceso a link(CONCEPT_LUXURY), especialmente si hablamos de link(RESOURCE_GEM) y de link(RESOURCE_DYE). Asimismo, a los artesanos les complace la ley de link(LAW_GUILDS,1).<end>
+
+¡En caso de que el enfado de los {FAMILY-0} no cese, puede que empiecen a aparecer unidades de rebeldes en sus ciudades!]]></es>
+	</Entry>
+	<Entry>
+		<zType>TEXT_EVENTSTORY_TUTORIAL_WORKER_SELECTED</zType>
+		<fr>Les link(UNIT_WORKER,2) construisent des améliorations pour vos cités. Les améliorations rurales, comme les link(IMPROVEMENT_FARM,2) et les link(IMPROVEMENT_MINE,2), permettent de récolter des matériaux. Les améliorations link(CONCEPT_URBAN,4), comme les link(IMPROVEMENT_BARRACKS,2) ou les link(IMPROVEMENTCLASS_SHRINE,2) apportent de l'link(YIELD_TRAINING,1) ou de la link(YIELD_CULTURE,1).
+
+Hormis quelques exceptions, les link(CONCEPT_IMPROVEMENT,2) link(CONCEPT_URBAN,4) doivent être construites sur ou près des tuiles link(CONCEPT_URBAN,4). Un nombre trop peu élevé d'améliorations link(CONCEPT_URBAN,4) entraîne un link(YIELD_DISCONTENT,1), donc soyez prudent et conservez de la place pour elles près de vos cités. Vous pouvez augmenter le nombre possible d'link(CONCEPT_IMPROVEMENT,1) depuis l'écran Cité grâce aux link(CONCEPT_SPECIALIST,2).</fr>
 	</Entry>
 	<Entry>
 		<zType>TEXT_EVENTSTORY_TUTORIAL_AGENTS_PART_THREE</zType>
@@ -529,11 +660,22 @@ Une link(CONCEPT_HARVEST_RESOURCE,2) a besoin de plusieurs tours pour se reconst
 	</Entry>
 	<Entry>
 		<zType>TEXT_EVENTSTORY_TUTORIAL_FAMILY_ANGRY</zType>
+		<de>Eine Eurer link(CONCEPT_FAMILY,2) ist link(OPINIONFAMILY_ANGRY) auf Euch! Die Meinung der link(CONCEPT_FAMILY) wird von der link(YIELD_DISCONTENT,1) in den Städten der link(CONCEPT_FAMILY) und durch Eure Entscheidungen bei Ereignissen beeinflusst.
+
+Die link(YIELD_DISCONTENT) in Städten steigt automatisch mit der Zeit. Um die link(YIELD_DISCONTENT) zu verringern, könnt Ihr Eure Städte mit link(CONCEPT_ROAD,2) verbinden, eine link(CONCEPT_STATE_RELIGION) ausrufen, bestimmte link(CONCEPT_IMPROVEMENT,2) wie link(IMPROVEMENTCLASS_BATHS,2) errichten and bestimmte Gesetze wie link(LAW_DIVINE_RULE) and link(LAW_TOLERANCE) erlassen.
+
+Wenn eine link(CONCEPT_FAMILY) link(OPINIONFAMILY_ANGRY) auf Euch ist, besteht das Risiko, dass sich in den Städten der link(CONCEPT_FAMILY) Rebelleneinheiten bilden!</de>
 		<fr>Une de vos link(CONCEPT_FAMILY,2) est link(OPINIONFAMILY_ANGRY) après vous ! L'opinion d'une link(CONCEPT_FAMILY) est influencée par le link(YIELD_DISCONTENT,1) dans ses cités et par les choix des joueurs et joueuses pendant les événements.
 
 Le link(YIELD_DISCONTENT) augmente avec le temps dans les cités. Connecter vos cités par des link(CONCEPT_ROAD,2), adopter une link(CONCEPT_STATE_RELIGION), construire certaines link(CONCEPT_IMPROVEMENT,2) comme les link(IMPROVEMENTCLASS_BATHS,2) et adopter certaines lois comme la link(LAW_DIVINE_RULE) et la link(LAW_TOLERANCE) permet de diminuer le link(YIELD_DISCONTENT).
 
 Si une link(CONCEPT_FAMILY) est link(OPINIONFAMILY_ANGRY) après vous, des unités rebelles peuvent se former dans ses cités !</fr>
+	</Entry>
+	<Entry>
+		<zType>TEXT_EVENTSTORY_TUTORIAL_ARCHETYPE_HERO</zType>
+		<es><![CDATA[{CHARACTER-0}, tu líder, tiene link(CONCEPT_ARCHETYPE,1) link(TRAIT_SCHOLAR_ARCHETYPE). Un link(EFFECTPLAYER_TRAIT_HERO_ARCHETYPE) gana 50 link(YIELD_TRAINING,1) adicional por la unidad militar matada, concede un <color=#e3c08c><link="HELP_LINK,HELP_ATTACK_VALUE">+int(STRENGTH_MULTIPLIER)%  icon(ATTACK)</link></color> adicional a cada unidad en link(UNITTRAIT_MELEE) y como link(CONCEPT_GENERAL) puede link(CONCEPT_LAUNCH_OFFENSIVE).
+
+Los personajes link(TRAIT_HERO_ARCHETYPE)también tienen un link(RATING_COURAGE) más alto, lo que, como líder, hace que su nación invierta en más link(YIELD_TRAINING).]]></es>
 	</Entry>
 	<Entry>
 		<zType>TEXT_EVENTSTORY_TUTORIAL_ARCHETYPE_COMMANDER</zType>
@@ -645,6 +787,12 @@ Se necesita un soldado valiente para luchar, dice {G1:este:esta}, y a un general
 Das Militär von {PLAYER-0} hat viel Respekt für Euch als link(TRAIT_HERO_ARCHETYPE,{choice_GL:M:F}). Für sie wäre es eine große Ehre, mit Euch zu trainieren, wenn Ihr Zeit dafür hättet.</de>
 	</Entry>
 	<Entry>
+		<zType>TEXT_EVENTSTORY_TOUGH_NEGOTIATION</zType>
+		<es>Tu intuición era correcta. Incluso cuando los peregrinos {PLAYER-2,3} se dirigían a {CITY-0} y estos no parecían ser muchos, algunas personas importantes como {p.is_sub.S2=SUBJECT_PLAYER_ROME:un senador:unos nobles} y {p.is_sub.S2=SUBJECT_PLAYER_EGYPT:un arquitecto de pirámides:un arquitecto para la corte}.
+
+Después de lo que describen nuestros mensajeros como «una negociación larga y desagradable», la nación de {PLAYER-2} está dispuesta a rendirnos tributo y a dejar de luchar a cambio de liberar y devolverles a los rehenes que están bajo nuestro poder.</es>
+	</Entry>
+	<Entry>
 		<zType>TEXT_EVENTSTORY_THE_HOLY_ARMY</zType>
 		<es>Uno de los {S0.PRIEST,2} de {CHARACTER-SHORT-1} lee en voz alta el mensaje que {G1:este:esta} le ha dado:
 
@@ -655,6 +803,16 @@ Das Militär von {PLAYER-0} hat viel Respekt für Euch als link(TRAIT_HERO_ARCHE
 		<ru>Разграбление {lowercase:link(EFFECTCITY_HOLY_CITY,1)} {CITY-1,1} {lowercase:{PLAYER-2,22}} налетчиками повергло в шок всех богобоязненных {lowercase:{RELIGION-0,25}}. {CHARACTER-4} призывает вас отомстить тем, кто осмелился посягнуть на священные устои {lowercase:{RELIGION-0,1}}.
 
 Ответите ли вы на {G4:его:ее} призыв?</ru>
+	</Entry>
+	<Entry>
+		<zType>TEXT_EVENTSTORY_AMBITION_FINISHED_STONE_400</zType>
+		<es>El polvo gris cubre el camino principal que va hacia {CITY-0} mientras tus agentes toman otro cargamento de valiosa link(YIELD_STONE,1) {PLAYER_F-0,1}. Hemos extraído bastantes estos últimos años. ¿Qué uso le daremos?</es>
+	</Entry>
+	<Entry>
+		<zType>TEXT_EVENTSTORY_AMBITION_FINISHED_MONEY_2000</zType>
+		<fr>Ayant un fort intérêt pour les affaires financières de la nation, vous avez pris l'habitude de superviser personnellement le comptage des pièces {PLAYER-0,8} et vous assistez au passage du cap des 2 000 link(YIELD_MONEY,1). C'est un jour excitant pour {PLAYER-0} !
+
+Comment envisagez-vous l'avenir de l'économie {PLAYER-0,7} ?</fr>
 	</Entry>
 	<Entry>
 		<zType>TEXT_EVENTSTORY_COGNOMEN_DRILLMASTER</zType>
@@ -673,6 +831,12 @@ Al examinar el daño que causó el asedio, te preguntas qué viene a continuaci�
 		<fr>{CHARACTER-SHORT-0} n'est pas seulement votre {p.is_sub.S0=SUBJECT_SPOUSE_OF_LEADER_US:{G0:épouse:époux}:{G0:compagne:compagnon}}, c'est avant tout la personne que vous aimez. Régner sur {PLAYER-1} serait une épreuve froide et solitaire sans votre muse.
 
 Alors qu'un jour, vous l'observez {p.is_sub.S0=SUBJECT_EQUESTRIAN:chevaucher:p.is_sub.S0=SUBJECT_WARLIKE:s'entraîner:p.is_sub.S0=SUBJECT_DILIGENT:travailler:se détendre}, vous vous demander si vous ne partiriez pas à la recherche d'un présent pour votre amour. </fr>
+	</Entry>
+	<Entry>
+		<zType>TEXT_EVENTSTORY_CITY_REBORN</zType>
+		<ru>Вы идете по разрушенным улицам {CITY-0,1}, мимо сгоревших домов и толп беженцев. {CHARACTER-2} {G2:попросил:попросила} помочь городу {G2:его:ее} семьи. Ужасы этого дня надолго останутся в памяти. {p.is_sub.S3=SUBJECT_COMPASSIONATE:Ваше сердце обливается кровью при мысли о людях, лишившихся всего:}.
+
+Вы поможете городу {FAMILY-1,7}? </ru>
 	</Entry>
 	<Entry>
 		<zType>TEXT_EVENTSTORY_AMBITION_ORATOR_2</zType>
@@ -872,7 +1036,7 @@ Leider hat ein Berater Euch soeben darüber informiert, dass einige {random_R3:p
 	</Entry>
 	<Entry>
 		<zType>TEXT_EVENTSTORY_YOUNG_RULER_SUCCESSORS</zType>
-		<es>Llega a tus oídos que {CHARACTER-1} y {CHARACTER-2} suelen pasar tiempo {G1:juntos:G2:juntos:juntas} últimamente. {CHARACTER-SHORT-2} parece coincidir con todo lo que dice {CHARACTER-SHORT-1}. Como {G1:sucesores:{G2:sucesores:sucesoras}} de la corona, la idea de que estén maquinando {G1:juntos:{G2:juntos:juntas}} es preocupante, como mínimo.
+		<es>Llega a tus oídos que {CHARACTER-1} y {CHARACTER-2} suelen pasar tiempo {G1:juntos:{G2:juntos:juntas}} últimamente. {CHARACTER-SHORT-2} parece coincidir con todo lo que dice {CHARACTER-SHORT-1}. Como {G1:sucesores:{G2:sucesores:sucesoras}} de la corona, la idea de que estén maquinando {G1:juntos:{G2:juntos:juntas}} es preocupante, como mínimo.
 
 Parece que {CHARACTER-SHORT-1} lleva la voz cantante y es a quien hay que convencer para que deje de conspirar. ¿Cómo te encargarás de esta posible amenaza?</es>
 	</Entry>
@@ -939,6 +1103,14 @@ Was sollen wir mit dieser – zweifelsohne unterhaltsamen – Erfindung anfangen
 この紛れもなく楽しい発明に対して、私たちは何をしたら良いだろうか？</ja>
 	</Entry>
 	<Entry>
+		<zType>TEXT_EVENTSTORY_LOST_IN_TRANSLATION</zType>
+		<ja>{PLAYER-1}と{PLAYER-2}が、我々に契約上の紛争の和解を申し込んできた。
+
+裕福な{PLAYER-1,1}が{PLAYER-2}で土地と牛を購入した。その際、両者の印が押された契約書が交わされた。契約書には{p.is_sub.S1=SUBJECT_PLAYER_ASSYRIA:アラム語:}{p.is_sub.S1=SUBJECT_PLAYER_BABYLONIA:アッカド語:}{p.is_sub.S1=SUBJECT_PLAYER_CARTHAGE:ポエニ語:}{p.is_sub.S1=SUBJECT_PLAYER_EGYPT:エジプト語:}{p.is_sub.S1=SUBJECT_PLAYER_GREECE:ギリシャ語:}{p.is_sub.S1=SUBJECT_PLAYER_PERSIA:ペルシャ語:}{p.is_sub.S1=SUBJECT_PLAYER_ROME:ラテン語:}{p.is_sub.S1=SUBJECT_PLAYER_HITTITE:ヒッタイト語:}で雄牛と雌牛と記されていたにも関わらず、買い手は雄牛しか手に入れることができなかった。{PLAYER-2,1}の売り手は、{p.is_sub.S1=SUBJECT_PLAYER_ASSYRIA:アラム語:}{p.is_sub.S1=SUBJECT_PLAYER_BABYLONIA:アッカド語:}{p.is_sub.S1=SUBJECT_PLAYER_CARTHAGE:ポエニ語:}{p.is_sub.S1=SUBJECT_PLAYER_EGYPT:エジプト語:}{p.is_sub.S1=SUBJECT_PLAYER_GREECE:ギリシャ語:}{p.is_sub.S1=SUBJECT_PLAYER_PERSIA:ペルシャ語:}{p.is_sub.S1=SUBJECT_PLAYER_ROME:ラテン語:}{p.is_sub.S1=SUBJECT_PLAYER_HITTITE:ヒッタイト語:}の契約書の写しには、はっきりと雄牛のみだと書かれていると言う。
+
+翻訳に問題があったのだろう。異なる言語の契約書にはそれぞれ別の内容が書かれているようだ！</ja>
+	</Entry>
+	<Entry>
 		<zType>TEXT_EVENTSTORY_FUEL_FOR_THE_FIRES</zType>
 		<en-US><![CDATA[The {FAMILY-0} family are staunch worshipers of {RELIGION-1}, often calling upon the favors of <p.is_sub.S3=SUBJECT_PLAYER_ROME>Jupiter<p=SUBJECT_PLAYER_EGYPT>Ra<p=SUBJECT_PLAYER_GREECE>Zeus<p=SUBJECT_PLAYER_PERSIA>Atar<p=SUBJECT_PLAYER_ASSYRIA>Ashur<p=SUBJECT_PLAYER_BABYLONIA>Ishtar<p=SUBJECT_PLAYER_CARTHAGE>Melqart<p=SUBJECT_PLAYER_HITTITE>Arinnitti<else>the gods<end>.
 
@@ -965,6 +1137,22 @@ El cabeza de familia, {CHARACTER-2}, se ha presentado ante ti, afirmando que los
 	<Entry>
 		<zType>TEXT_EVENTSTORY_CLEARING_FAMILY_DEBT_TITLE</zType>
 		<es>Saldando {G0:su:su} deuda</es>
+	</Entry>
+	<Entry>
+		<zType>TEXT_EVENTSTORY_MERCENARY_HORSE_ARCHER_TITLE</zType>
+		<de>link(UNIT_HORSE_ARCHER,5)-link(CONCEPT_MERCENARY)</de>
+	</Entry>
+	<Entry>
+		<zType>TEXT_EVENTSTORY_MERCENARY_CAMEL_ARCHER_TITLE</zType>
+		<de>link(UNIT_CAMEL_ARCHER,5)-link(CONCEPT_MERCENARY)</de>
+	</Entry>
+	<Entry>
+		<zType>TEXT_EVENTSTORY_CHANCELLOR_CANDIDATES_TITLE</zType>
+		<fr>Candidats : link(COUNCIL_CHANCELLOR)</fr>
+	</Entry>
+	<Entry>
+		<zType>TEXT_EVENTSTORY_SPYMASTER_CANDIDATES_TITLE</zType>
+		<fr>Candidats : link(COUNCIL_SPYMASTER)</fr>
 	</Entry>
 	<Entry>
 		<zType>TEXT_EVENTSTORY_DIVORCE_LOVER_AND_SPOUSE_TITLE</zType>
@@ -1015,6 +1203,30 @@ El cabeza de familia, {CHARACTER-2}, se ha presentado ante ti, afirmando que los
 		<ru>В качестве {lowercase:link(CONCEPT_STATE_RELIGION,1)}: {0}</ru>
 	</Entry>
 	<Entry>
+		<zType>TEXT_HELPTEXT_LINK_HELP_TUTORIAL_ORDERS</zType>
+		<ru>Юниты могут перемещаться несколько раз за ход, но каждое движение расходует один {lowercase:link(YIELD_ORDERS,6)}. Другие действия, как, например, атака или строительство, также поглощают {lowercase:link(YIELD_ORDERS,9)}.
+
+Вы можете найти оставшееся количество {lowercase:link(YIELD_ORDERS,1)} в левом нижнем углу экрана справа от портрета вашего лидера. Расходуйте {lowercase:link(YIELD_ORDERS,3)} расчетливо, обдуманно выбирая, чему отдать приоритет: строительству, сражениям или перемещению.
+		
+В конце хода все неиспользованные {lowercase:link(YIELD_ORDERS,6)} превращаются в {lowercase:link(YIELD_MONEY,3)}.
+
+Юниты не могут совершать никакие действия, если у вас нет {lowercase:link(YIELD_ORDERS,1)}. Новые {lowercase:link(YIELD_ORDERS,9)} вы получаете в начале каждого хода, однако, если вам срочно нужно отдать какую-либо команду, вы можете потратить немного {lowercase:link(YIELD_TRAINING,1)} (int(TRAINING_PER_ORDER)), чтобы купить один {lowercase:link(YIELD_ORDERS,6)}.
+
+Главный источник {lowercase:link(YIELD_ORDERS,1)} — icon(YIELD_LEGITIMACY){lowercase:link(CONCEPT_LEGITIMACY)}.</ru>
+	</Entry>
+	<Entry>
+		<zType>TEXT_HELPTEXT_LINK_HELP_TUTORIAL_CHANCELLOR</zType>
+		<ru>Вы можете управлять своим царством, выполняя особые задания при помощи {lowercase:link(COUNCIL_CHANCELLOR,1)}. Нажав на портрет {lowercase:link(COUNCIL_CHANCELLOR,1)} в правом верхнем углу, вы увидите все доступные {lowercase:link(COUNCIL_CHANCELLOR,2)} действия на панели в левой части экрана.
+
+link(COUNCIL_CHANCELLOR) может отправлять {lowercase:link(MISSION_FAMILY_GIFT)}, чтобы улучшать отношения с могущественными {lowercase:link(CONCEPT_FAMILY,10)}, {lowercase:link(MISSION_PACIFY_CITY)}, снижая тем самым уровень {YIELD_DISCONTENT}{lowercase:link(YIELD_DISCONTENT,1)}, а также {lowercase:link(MISSION_IMPRISON)} неугодных персонажей!
+	
+Если вы изучили технологию «link(TECH_SPOKED_WHEEL)» и при вашем дворе есть подходящий кандидат с такой чертой, как {lowercase:link(TRAIT_ZEALOT_ARCHETYPE)}, {lowercase:link(TRAIT_JUDGE_ARCHETYPE)} или {lowercase:link(TRAIT_BUILDER_ARCHETYPE)}, то вы можете назначить {lowercase:link(COUNCIL_CHANCELLOR,3)} при помощи светящегося значка пера  icon(COUNCIL_CHANCELLOR) в правом верхнем углу экрана.</ru>
+	</Entry>
+	<Entry>
+		<zType>TEXT_HELPTEXT_LINK_HELP_TUTORIAL_SPEARMAN</zType>
+		<ja>link(UNIT_SPEARMAN)は、あなたの国が最初に使えるlink(UNITTRAIT_POLEARM)のユニットです。link(UNITTRAIT_POLEARM)ユニットは、敵のlink(UNITTRAIT_MOUNTED)ユニットに対して有利で、link(UNITTRAIT_POLEARM)のみがlink(UNITTRAIT_MOUNTED)にlink(CONCEPT_ZOC)を利用できます。また、link(UNIT_SPEARMAN,2)は貫通攻撃が可能で、対象の後ろにいるユニットに一部ダメージを与えることができます。</ja>
+	</Entry>
+	<Entry>
 		<zType>TEXT_HELPTEXT_LINK_HELP_TUTORIAL_TRIBES</zType>
 		<fr>Une fois les link(CONCEPT_TRIBE,2) locales repoussées d'un link(IMPROVEMENT_CITY_SITE), vous pouvez le récupérer en plaçant une unité dessus. Cela empêchera le retour de la link(CONCEPT_TRIBE), et les autres nations de fonder une cité à cet emplacement.
 
@@ -1027,13 +1239,59 @@ Vous pourriez avoir à vaincre des link(TRIBE_BARBARIANS) pour accéder aux link
 		<de>link(UNITTRAIT_MOUNTED,2) link(UNITTRAIT_MELEE)-Einheiten sind schnell und haben die einzigartige Fähigkeit „link(EFFECTUNIT_ROUT)“: Sie können erneut angreifen, wenn sie eine feindliche Einheit töten.</de>
 	</Entry>
 	<Entry>
+		<zType>TEXT_HELPTEXT_LINK_HELP_TUTORIAL_HOLD_COURT</zType>
+		<fr>Les missions link(MISSION_HOLD_COURT) permettent de gagner des {YIELD_CIVICS}link(YIELD_CIVICS) contre quelques link(YIELD_ORDERS) et link(YIELD_TRAINING,1). Elles peuvent également déclencher de nouveaux événements.
+
+Vous pouvez lancer une mission link(MISSION_HOLD_COURT) avec un dirigeant link(TRAIT_JUDGE_ARCHETYPE) en cliquant sur le bouton du marteau  icon(MISSION_HOLD_COURT) dans le panneau d'action à gauche lorsque votre dirigeant est sélectionné.</fr>
+	</Entry>
+	<Entry>
+		<zType>TEXT_HELPTEXT_LINK_HELP_TUTORIAL_WORKER</zType>
+		<fr>Les link(UNIT_WORKER,2) construisent des améliorations pour votre cité. Les link(CONCEPT_IMPROVEMENT,2) rurales, comme les link(IMPROVEMENT_FARM,2) et les link(IMPROVEMENT_MINE,2), permettent de récolter des matériaux. Les améliorations link(CONCEPT_URBAN,4), comme les link(IMPROVEMENT_BARRACKS,2) ou les link(IMPROVEMENT_THEATER_1,2) apportent de l'{YIELD_TRAINING}link(YIELD_TRAINING) ou de la {YIELD_CULTURE}link(YIELD_CULTURE).
+
+Hormis quelques exceptions, les améliorations link(CONCEPT_URBAN,4) doivent être construites sur ou près des tuiles link(CONCEPT_URBAN,4). Un nombre trop peu élevé d'améliorations link(CONCEPT_URBAN,4) entraîne un {YIELD_DISCONTENT}link(YIELD_DISCONTENT), donc soyez prudent et conservez de la place pour elles près de vos cités. Vous pouvez augmenter le nombre possible d'link(CONCEPT_IMPROVEMENT,1) depuis l'écran Cité grâce aux link(CONCEPT_SPECIALIST,2).</fr>
+	</Entry>
+	<Entry>
+		<zType>TEXT_HELPTEXT_LINK_HELP_TUTORIAL_RUSH_BUYING</zType>
+		<de>Sobald eine Stadt die link(CONCEPT_CULTURE_LEVEL) „link(CULTURE_DEVELOPING)“ erreicht, sind in der Stadt verschiedene Möglichkeiten verfügbar, die Produktion dort zu link(CONCEPT_HURRY,2).
+
+Ab der link(CONCEPT_CULTURE_LEVEL) „link(CULTURE_DEVELOPING)“ könnt Ihr in einer Stadt die link(CONCEPT_HURRY). Dies kostet ein wenig {YIELD_CIVICS}link(YIELD_CIVICS) und erhöht die {YIELD_DISCONTENT}link(YIELD_DISCONTENT). Weitere Methoden zur link(CONCEPT_HURRY,1) werden durch bestimmte link(CONCEPT_GOVERNOR)-Merkmale und Gesetze wie link(LAW_ORTHODOXY) und link(LAW_VOLUNTEERS) freigeschaltet. Diese Methoden zur link(CONCEPT_HURRY,1) kosten kein {YIELD_CIVICS}link(YIELD_CIVICS), sondern andere Rohstoffe, aber alle Methoden erhöhen die {YIELD_DISCONTENT}link(YIELD_DISCONTENT). Wenn Ihr beispielsweise das Gesetz link(LAW_HOLY_WAR) erlasst und eine link(CONCEPT_STATE_RELIGION) ausruft, könnt Ihr die link(CONCEPT_HURRY), indem Ihr link(YIELD_MONEY,1) zahlt. Die link(CONCEPT_FAMILY_CLASS) der link(FAMILYCLASS_PATRONS) kann sogar immer gegen link(YIELD_MONEY,1) die link(CONCEPT_HURRY).
+
+Die verschiedenen Möglichkeiten zur link(CONCEPT_HURRY,1) werden im Stadtmenü unter der aktuellen Produktion angezeigt. Die link(CONCEPT_HURRY,1) ist sehr kostspielig, kann Euch jedoch aus schwierigen Situationen retten!</de>
+	</Entry>
+	<Entry>
+		<zType>TEXT_HELPTEXT_LINK_HELP_TUTORIAL_CARAVAN_SELECTED</zType>
+		<de>link(UNIT_CARAVAN,5) können auf link(CONCEPT_CARAVAN_MISSION,2) in link(CONCEPT_CAPITAL,2) anderer Länder geschickt werden. Wenn sie dort sicher ankommen, wird die link(UNIT_CARAVAN) aufgelöst und Ihr erhaltet einen bestimmten {YIELD_MONEY}link(YIELD_MONEY)-Betrag. Eine erfolgreiche link(CONCEPT_CARAVAN_MISSION) erhöht auch Euer link(CONCEPT_OPINION_PLAYER,3) bei dieser link(CONCEPT_NATION).
+
+Ihr solltet Eure link(UNIT_CARAVAN,5) unterwegs unbedingt beschützen, da sie sehr verwundbar sind!
+		</de>
+	</Entry>
+	<Entry>
 		<zType>TEXT_HELPTEXT_LINK_HELP_TUTORIAL_URBAN_TRAINING</zType>
 		<fr>L'link(YIELD_TRAINING,1) est utilisé par les cités pour produire des unités militaires. L'link(YIELD_TRAINING) inutilisé est stocké dans la réserve globale, et peut être utilisé pour acheter des link(YIELD_ORDERS,1), lancer une link(CONCEPT_MARCH,1), et pour les link(CONCEPT_PROMOTION,2) et link(CONCEPT_UPGRADE,2) des unités. Augmentez l'link(YIELD_TRAINING,1) en produisant des link(SPECIALIST_MINER,2) et en construisant des link(IMPROVEMENT_BARRACKS,2) ou des link(IMPROVEMENT_RANGE,2). Les link(IMPROVEMENT_BARRACKS,2) et les link(IMPROVEMENT_RANGE,2) peuvent accueillir des link(SPECIALISTCLASS_OFFICER,1) spécialistes, qui améliorent davantage l'link(YIELD_TRAINING) dans la cité.
 		
 L'link(YIELD_TRAINING) global vient également des memnbres de votre link(CONCEPT_COURT) ayant un link(RATING_COURAGE) élevé. Les link(IMPROVEMENT_MINE,2) procurent de l'link(YIELD_TRAINING) si elles sont construites sur du link(RESOURCE_ORE), et la mission link(MISSION_RALLY_TROOPS) du souverain peut aussi produire de l'link(YIELD_TRAINING). La réserve d'link(YIELD_TRAINING) a une limite de int(MAX_TRAINING). Au-dessus de cette valeur, elle est automatiquement convertie en link(YIELD_ORDERS).</fr>
 	</Entry>
 	<Entry>
+		<zType>TEXT_HELPTEXT_LINK_HELP_TUTORIAL_URBAN_CULTURE</zType>
+		<es>Cuando la barra de {YIELD_CULTURE}link(YIELD_CULTURE) de una ciudad se llena, ocurre un evento positivo y aumenta el nivel general de {YIELD_CULTURE}cultura de la ciudad. Las ciudades comienzan con un nivel de {YIELD_CULTURE}link(YIELD_CULTURE) link(CULTURE_WEAK) y el nivel máximo es link(CULTURE_LEGENDARY). El nivel de {YIELD_CULTURE}link(YIELD_CULTURE) afecta a los link(CONCEPT_IMPROVEMENT,2) y maravillas que se pueden construir en el territorio de ciudad y a si la ciudad puede link(CONCEPT_HURRY), lo que requiere al menos un nivel de {YIELD_CULTURE}cultura link(CULTURE_DEVELOPING).
+
+Puedes mejorar la {YIELD_CULTURE}link(YIELD_CULTURE) construyendo link(CONCEPT_IMPROVEMENT,2) urbanos, como los link(IMPROVEMENTCLASS_SHRINE,2) y los link(IMPROVEMENTCLASS_ODEON,2), y construyendo link(CONCEPT_IMPROVEMENT,2) rurales como la link(IMPROVEMENTCLASS_MINE) sobre link(RESOURCE_GEM), el link(IMPROVEMENTCLASS_CAMP) sobre link(RESOURCE_FUR), la link(IMPROVEMENTCLASS_GROVE) sobre link(RESOURCE_INCENSE) o las link(IMPROVEMENTCLASS_NETS) sobre link(RESOURCE_DYE).
+
+link(CONCEPT_SPREAD_RELIGION,1) link(CONCEPT_RELIGION,2) en una ciudad y los link(CONCEPT_IMPROVEMENT,2) únicos de esa link(CONCEPT_RELIGION) también aumentan la {YIELD_CULTURE}link(YIELD_CULTURE) y esas ganancias pueden aumentarse todavía más con leyes y link(CONCEPT_THEOLOGY,2). Los link(CONCEPT_SPECIALIST,2) como el link(SPECIALIST_ACOLYTE_1), el link(SPECIALIST_POET_1) y el link(SPECIALIST_MONK_1) y sus mejoras también mejoran la producción de {YIELD_CULTURE}link(YIELD_CULTURE).</es>
+	</Entry>
+	<Entry>
+		<zType>TEXT_HELPTEXT_LINK_HELP_TUTORIAL_URBAN_MONEY</zType>
+		<de>{YIELD_MONEY}link(YIELD_MONEY) ist am nützlichsten, um {YIELD_FOOD}link(YIELD_FOOD), {YIELD_IRON}link(YIELD_IRON), {YIELD_STONE}link(YIELD_STONE) und {YIELD_WOOD}link(YIELD_WOOD) zu kaufen (diese Ressourcen können auch verkauft werden, falls Ihr mehr {YIELD_MONEY}link(YIELD_MONEY) benötigt). Baut link(IMPROVEMENT_HAMLET,2) und link(EFFECTCITY_PROJECT_TREASURY,2) in Euren Städten, um mehr {YIELD_MONEY}link(YIELD_MONEY) zu erhalten. Außerdem generieren Mitglieder Eures link(CONCEPT_COURT,1), wenn sie eine hohe link(RATING_DISCIPLINE) besitzen, {YIELD_MONEY}link(YIELD_MONEY).
+
+Die link(YIELD_MAINTENANCE,1) verringern die Menge an link(YIELD_MONEY,1), die in einer Stadt entsteht. link(YIELD_MAINTENANCE,1) steigen mit der Zahl der link(CONCEPT_CITIZEN,3) und link(CONCEPT_SPECIALIST,3) sowie der Entfernung einer Stadt zu Eurer link(CONCEPT_CAPITAL). link(YIELD_MAINTENANCE,1) können verringert werden, indem Ihr eine Stadt in das link(CONCEPT_TRADE_NETWORK) einbindet und das link(CONCEPT_OPINION_FAMILY,3) bei ihrer herrschenden link(CONCEPT_FAMILY) erhöht. Bestimmte link(CONCEPT_IMPROVEMENT,2) wie die link(IMPROVEMENT_GARRISON_3) und der link(IMPROVEMENT_COURTHOUSE_3) verringern ebenfalls die link(YIELD_MAINTENANCE), aber link(CONCEPT_IMPROVEMENT,2) ohne link(CONCEPT_SPECIALIST,2) erhöhen die link(YIELD_MAINTENANCE) wiederum.</de>
+	</Entry>
+	<Entry>
+		<zType>TEXT_HELPTEXT_LINK_HELP_TUTORIAL_UNIT_UPGRADES</zType>
+		<es>Las unidades pueden recibir link(CONCEPT_UPGRADE,2) y link(CONCEPT_PROMOTION,2). La link(CONCEPT_UPGRADE,0) convierte a la unidad a otro tipo diferente. Por ejemplo, un link(UNIT_WARRIOR) puede link(CONCEPT_UPGRADE,4) a link(UNIT_AXEMAN). link(CONCEPT_PROMOTION,2) otorgan varias mejoras de combate. Tanto los link(CONCEPT_PROMOTION,2) como las link(CONCEPT_UPGRADE,2) cuestan {YIELD_TRAINING}link(YIELD_TRAINING). Las link(CONCEPT_UPGRADE,2) solo pueden hacerse en territorio aliado, mientras que los link(CONCEPT_PROMOTION,2) pueden hacerse en cualquier sitio.</es>
+	</Entry>
+	<Entry>
 		<zType>TEXT_HELPTEXT_LINK_HELP_TUTORIAL_CULTURE</zType>
+		<es>Un nivel superior de {YIELD_CULTURE}link(YIELD_CULTURE) desbloquea link(CONCEPT_IMPROVEMENT,2) adicionales y maravillas para tus ciudades. Cada nuevo nivel también activa un link(CONCEPT_CULTURE_EVENT) positivo para la ciudad.</es>
 		<fr>Un niveau de link(YIELD_CULTURE) plus élevé signifie plus d'link(CONCEPT_IMPROVEMENT,2) disponibles et plus de merveilles dans votre cité. Chaque nouveau niveau déclenche également un link(CONCEPT_CULTURE_EVENT) positif dans la cité.</fr>
 	</Entry>
 	<Entry>
@@ -1045,6 +1303,144 @@ Les ressources qui se trouvent dans le territoire d'une cité, ou qui sont trop 
 	<Entry>
 		<zType>TEXT_HELPTEXT_LINK_HELP_TRIBE_RAID</zType>
 		<ru>Налетчики появляются на стоянках {lowercase:link(CONCEPT_TRIBE,7)}, где находится слишком много юнитов. Случайное количество юнитов племени превращается в налетчиков, которые атакуют ближайший город, находящийся в состоянии {lowercase:link(DIPLOMACY_WAR,1)} или {lowercase:link(DIPLOMACY_TRUCE,1)} с племенем. Сами налетчики при этом всегда находятся в состоянии {lowercase:link(DIPLOMACY_WAR,1)} со всеми {lowercase:link(CONCEPT_NATION,10)}. Племена, состоящие в {lowercase:link(CONCEPT_ALLIANCE_TRIBE,5)}, никогда не станут совершать налеты. На более высоких уровнях сложности налетчики могут появляться из далеких земель на границах карты.</ru>
+	</Entry>
+	<Entry>
+		<zType>TEXT_HELPTEXT_LINK_HELP_CONNECTED_FOREIGN</zType>
+		<ja>あなたの{0_capital}に連結された外国都市（要link(DIPLOMACY_PEACE)）：
+（都市がより大きくてと遠いほどにより生産します）</ja>
+	</Entry>
+	<Entry>
+		<zType>TEXT_HELPTEXT_LINK_HELP_AMBITION</zType>
+		<ru>Реализуйте десять амбиций и {lowercase:link(CONCEPT_LEGACY,7)}, чтобы одержать {lowercase:link(VICTORY_AMBITION,3)} (если активно). Реализация отдельных амбиций (и {lowercase:link(CONCEPT_LEGACY,7)}) навсегда повысит {lowercase:link(CONCEPT_LEGITIMACY,3)}.</ru>
+	</Entry>
+	<Entry>
+		<zType>TEXT_HELPTEXT_LINK_HELP_HIDDEN</zType>
+		<ja>潜伏しているユニットは、他のユニットから見えません。link(UNIT_SCOUT,2)（およびlink(TRAIT_TACTICIAN_ARCHETYPE)の指導者を持つlink(UNITTRAIT_RANGED)ユニット）は、中立または友好的な領土にあるlink(VEGETATION_TREES)タイル上にいる間、潜伏状態となります。潜伏中のユニットは、+int(HIDDEN_ATTACK_MODIFIER)%のicon(ATTACK)攻撃力修正を受けます（攻撃をした後は1ターンの間、潜伏状態は解けてしまいます）</ja>
+	</Entry>
+	<Entry>
+		<zType>TEXT_HELPTEXT_LINK_HELP_COGNOMEN</zType>
+		<zh-TW>稱號是可提高領袖icon(YIELD_LEGITIMACY)正統性的封號，例如link(COGNOMEN_INVINCIBLE)、link(COGNOMEN_WISE)和link(COGNOMEN_GREAT)。與稱號相關的特定狀態達到必要門檻後，即可獲得新稱號。例如，發現大量科技後，領袖就會成為link(COGNOMEN_WISE)。(門檻會隨著每任link(CONCEPT_NATION)領袖提高。)</zh-TW>
+		<zh-CN>称号是可提高领袖icon(YIELD_LEGITIMACY)正统性的封号，例如link(COGNOMEN_INVINCIBLE)、link(COGNOMEN_WISE)和link(COGNOMEN_GREAT)。与称号相关的特定状态达到必要门槛后，即可获得新称号。例如，发现大量科技后，领袖就会成为link(COGNOMEN_WISE)。 (门槛会随着每任link(CONCEPT_NATION)领袖提高。)</zh-CN>
+	</Entry>
+	<Entry>
+		<zType>TEXT_HELPTEXT_LINK_HELP_COMMUNITY_SHORTHAND</zType>
+		<fr>La communauté d'Old World du serveur Discord officiel a créé son propre code pour discuter des concepts du jeu. Vous pouvez rejoindre le serveur Discord officiel en cliquant sur l'icône Discord du menu principal. Voici une liste des abbréviations les plus utilisées.
+
+{bullet}1UPT - One Unit Per Tile, quand une seule unité peut occuper une tuile. C'est un concept utilisé par plusieurs jeux de stratégie, dont Old World pour les unités militaires. Il existe des cas où des unités civiles peuvent être sur la même tuile qu'une autre unité. Par exemple, un colon peut être avec une unité militaire.
+
+{bullet}AAR - After Action Report, commenter et discuter du déroulement d'une partie. Cela se passe après la fin d'une partie.
+
+{bullet}Alex - Référence à link(CHARACTER_ALEXANDER), premier héritier de la link(NATION_GREECE).
+
+{bullet}Babs - Référence à la link(CONCEPT_NATION) de link(NATION_BABYLONIA).
+
+{bullet}Chad/Neb - Référence à link(CHARACTER_NEBUCHADNEZZAR), premier souverain de link(NATION_BABYLONIA).
+
+{bullet}COD - Carpet of Doom, quand toutes les tuiles sont occupées par une unité militaire.
+
+{bullet}DAR - During Action Report, commenter et discuter le déroulement d'une partie en cours. Les lecteurs sont encouragés à suggérer les prochaines actions.
+
+{bullet}EA - Early Access, la période durant laquelle le jeu était ouvert au public avant sa sortie. Old World était en Early Access du 5 mai 2020 au 1er juillet 2021.
+
+{bullet}EGS - Epic Game Store, l'endroit où Old World est actuellement disponible à l'achat.
+
+{bullet}{RESOURCE_ELEPHANT} - Avoir un éléphant, ou utiliser l'émoticône éléphant, indique que les autres lecteurs trouvent que ce commentaire est une très bonne idée.
+
+{bullet}FFA - Free For All, une manière de jouer sans aucune équipe. Tout le monde joue pour gagner contre tous les autres.
+
+{bullet}GOTW - Game Of The Week, une partie hebdomadaire déjà paramétrée, qui est la même pour tous les joueurs d'Old World. Jouez et comparez-vous aux autres dans le canal #game-of-the-week du Discord officiel.
+
+{bullet}Haty - Référence à link(CHARACTER_HATSHEPSUT), première souveraine de l'link(NATION_EGYPT).
+
+{bullet}ICS - Infinite City Slease, le fait de concentrer ses cités pour extraire un maximum de ressources avec un minimum de développement. Un problème récurrent des jeux de stratégie. Old World règle ce problème grâce à l'utilisation d'link(CONCEPT_CITY_SITE,2) prédéfinis.
+
+{bullet}Main - Main Branch, la version publique du jeu. Mohawk applique les mises à jour à cette version après les tests sur la Test Branch (serveur test).
+
+{bullet}Mod - Un ajout au jeu qui modifie son fonctionnement. Les mods populaires contiennent des link(CONCEPT_NATION,2) supplémentaires, de nouveaux modes de jeu et portraits de personnage. Vous pouvez accéder au Gestionnaire de mods depuis le menu principal du jeu.
+
+{bullet}Mohawk/s - Référence à Mohawk Games, le studio qui a créé Old World, ou Mohawks, l'équipe de Mohawk Games.
+
+{bullet}MP - Multiplayer, mode jeu avec plusieurs joueurs humains. Peut se jouer en ligne en réseau, par le Cloud (similaire au jeu par correspondance), en Hotseat (deux joueurs sur le même ordinateur) ou en mode serveur (PITBOSS).
+
+{bullet}OCC - link(CONCEPT_ONE_CITY_CHALLENGE), une option de jeu où les joueurs humains n'ont qu'une seule cité. Ils ne peuvent pas entraîner de link(UNIT_SETTLER,2).
+
+{bullet}OTC - Offworld Trading Company, le jeu de stratégie économique de Mohawk Games se passant sur Mars.
+
+{bullet}PTW - Play To Win, une option de jeu où les joueurs IA feront tout pour récupérer les link(CONCEPT_CITY_SITE,2). Ils recevront des malus d'opinion envers les joueurs qui s'approchent de la victoire.
+
+{bullet}RNG - Random Number Generator, fait référence au facteur aléatoire d'une mécanique de jeu. Par exemple, la chance de coup critique intègre un nombre aléatoire.
+
+{bullet}Shurbie - link(CHARACTER_ASHURBANIPAL), premier souverain de l'link(NATION_ASSYRIA).
+
+{bullet}SOD - Stack of Doom, quand une armée entière d'unités se trouve sur une seule tuile. Un concept utilisé par plusieurs jeux de stratégie.
+
+{bullet}SP - Single Player, mode de jeu où un joueur humain affronte plusieurs joueurs contrôlés par l'IA.
+
+{bullet}Stomp - Comp Stomp, une manière de jouer où les humains s'allient pour éliminer tous les joueurs contrôlés par l'IA.
+
+{bullet}Test - Test Branch, une version publique du jeu que Mohawk utilise pour tester les mises à jour. Le serveur peut être instable et n'est pas recommandé pour le multijoueurs ou le GOTW, utilisez plutôt la Main Branch.
+
+{bullet}UU - Unique Unit, les unités uniques d'une link(CONCEPT_NATION) qui deviennent disponibles dans les cités qui contiennent une link(IMPROVEMENT_GARRISON_2) ou une link(IMPROVEMENT_GARRISON_3). Par exemple, le link(UNIT_LEGIONARY) de link(NATION_ROME).
+
+{bullet}VHA - Very High Advantage, une option de jeu qui donne un gros avantage à l'IA. Elle reçoit plusieurs bonus par tour. Combinée à la difficulté link(DIFFICULTY_GREAT), aux link(TRIBE_BARBARIANS) link(TRIBELEVEL_RAGING), et à l'option Play to Win, cela représente le plus haut niveau de défi d'une partie d'Old World.
+
+{bullet}XML -Dossiers texte comprenant des balises du jeu pour les événements, les personnages, les bonus, etc. Ils se trouvent dans le dossier Références du jeu.
+</fr>
+	</Entry>
+	<Entry>
+		<zType>TEXT_HELPTEXT_LINK_HELP_LUXURY</zType>
+		<ja>贅沢品を都市と取引することで、link(YIELD_DISCONTENT,1)を減少させることができます。また、他のlink(CONCEPT_NATION,2)、link(CONCEPT_TRIBE,2)、link(CONCEPT_FAMILY,2)と取引して、あなたの国に対する彼らの評価を向上させることができます。
+		
+それぞれのlink(CONCEPT_FAMILY_CLASS,2)には、link(CONCEPT_OPINION_FAMILY,3)をより高く上げることができる特定の贅沢品が二つずつあります。（例えば、link(FAMILYCLASS_CLERICS,2)はlink(RESOURCE_INCENSE)とlink(RESOURCE_LAVENDER)を好みます）
+
+贅沢品は次の資源から獲得できます：{bullet}link(RESOURCE_SALT)
+{bullet}link(RESOURCE_GEM)
+{bullet}link(RESOURCE_FUR)
+{bullet}link(RESOURCE_HONEY)
+{bullet}link(RESOURCE_INCENSE)
+{bullet}link(RESOURCE_LAVENDER)
+{bullet}link(RESOURCE_OLIVE)
+{bullet}link(RESOURCE_WINE)
+{bullet}link(RESOURCE_DYE)
+{bullet}link(RESOURCE_PEARL)</ja>
+		<zh-TW>與城市進行奢侈品貿易可降低link(YIELD_DISCONTENT)。與其他link(CONCEPT_NATION,2)、link(CONCEPT_TRIBE,2)和link(CONCEPT_FAMILY,2)進行奢侈品貿易，也可以提升他們對你的觀感。
+		
+每個link(CONCEPT_FAMILY_CLASS,2)都偏愛兩種特定奢侈品，可帶來較高的link(CONCEPT_OPINION_FAMILY,3)加成。(例如，link(FAMILYCLASS_CLERICS,2)偏愛link(RESOURCE_INCENSE)和link(RESOURCE_LAVENDER)。)
+
+奢侈品來自以下資源：
+{bullet}link(RESOURCE_SALT)
+{bullet}link(RESOURCE_GEM)
+{bullet}linklink(RESOURCE_FUR)
+{bullet}link(RESOURCE_HONEY)
+{bullet}link(RESOURCE_INCENSE)
+{bullet}link(RESOURCE_LAVENDER)
+{bullet}link(RESOURCE_OLIVE)link
+{bullet}link(RESOURCE_WINE)
+{bullet}link(RESOURCE_DYE)
+{bullet}link(RESOURCE_PEARL)</zh-TW>
+		<zh-CN>与城市进行奢侈品贸易可降低link(YIELD_DISCONTENT)。与其他link(CONCEPT_NATION,2)、link(CONCEPT_TRIBE,2)和link(CONCEPT_FAMILY,2)进行奢侈品贸易，也可以提升他们对你的观感。
+		
+每个link(CONCEPT_FAMILY_CLASS,2)都偏爱两种特定奢侈品，可带来较高的link(CONCEPT_OPINION_FAMILY,3)加成。 (例如，link(FAMILYCLASS_CLERICS,2)偏爱link(RESOURCE_INCENSE)和link(RESOURCE_LAVENDER)。)
+
+奢侈品来自以下资源：
+{bullet}link(RESOURCE_SALT)
+{bullet}link(RESOURCE_GEM)
+{bullet}linklink(RESOURCE_FUR)
+{bullet}link(RESOURCE_HONEY)
+{bullet}link(RESOURCE_INCENSE)
+{bullet}link(RESOURCE_LAVENDER)
+{bullet}link(RESOURCE_OLIVE)link
+{bullet}link(RESOURCE_WINE)
+{bullet}link(RESOURCE_DYE)
+{bullet}link(RESOURCE_PEARL)</zh-CN>
+	</Entry>
+	<Entry>
+		<zType>TEXT_HELPTEXT_LINK_HELP_UNIT_CONSUMES_MERCENARY</zType>
+		<ja>（link(CONCEPT_MERCENARY)：{0_value}）</ja>
+	</Entry>
+	<Entry>
+		<zType>TEXT_HELPTEXT_LINK_HELP_WORLD_RELIGION</zType>
+		<ja>4つの世界宗教（link(RELIGION_JUDAISM)・link(RELIGION_ZOROASTRIANISM)・link(RELIGION_CHRISTIANITY)・link(RELIGION_MANICHAEISM)）は、link(CONCEPT_NATION)が各必要条件を満たした時に設立されます。これらの宗教を持つ都市は、その宗教を他のlink(CONCEPT_SETTLEMENT,2)に広めることができる、link(CONCEPT_DISCIPLE,2)の育成が可能となります。このlink(CONCEPT_DISCIPLE,2)により、link(CONCEPT_RELIGION)のlink(IMPROVEMENTCLASS_MONASTERY,2)、link(IMPROVEMENTCLASS_TEMPLE,2)、link(IMPROVEMENTCLASS_CATHEDRAL,2)、link(IMPROVEMENTCLASS_HOLY_SITE,2)も建設できるようになります。またlink(CONCEPT_DISCIPLE,2)は、世界宗教のlink(CONCEPT_THEOLOGY)を確立することができます。</ja>
 	</Entry>
 	<Entry>
 		<zType>TEXT_HELPTEXT_YIELD_PERCENT_FROM</zType>
@@ -1059,6 +1455,14 @@ Les ressources qui se trouvent dans le territoire d'une cité, ou qui sont trop 
 		<fr>Attaque {0_attackType}{true_1: {1}}{true_2: à {2} %}</fr>
 	</Entry>
 	<Entry>
+		<zType>TEXT_HELPTEXT_CITIZENS_COUNT_QUEUE</zType>
+		<ja>実行待ちのlink(CONCEPT_CITIZEN,2)：{0}</ja>
+	</Entry>
+	<Entry>
+		<zType>TEXT_HELPTEXT_EFFECT_PLAYER_HELP_INVISIBLE_UNIT</zType>
+		<ja>{0,2_unit}はlink(CONCEPT_INVISIBLE)</ja>
+	</Entry>
+	<Entry>
 		<zType>TEXT_HELPTEXT_BONUS_RELEASE_AGENT_GENERIC</zType>
 		<ja>link(CONCEPT_AGENT)任務を離脱</ja>
 	</Entry>
@@ -1067,8 +1471,16 @@ Les ressources qui se trouvent dans le territoire d'une cité, ou qui sont trop 
 		<ru>В качестве {lowercase:link(CONCEPT_STATE_RELIGION,1)}: {LIST}</ru>
 	</Entry>
 	<Entry>
+		<zType>TEXT_HELPTEXT_THEOLOGY_HELP_ONE_PER_TIER</zType>
+		<ja>宗教ごとに最大階層{0}のlink(CONCEPT_THEOLOGY)</ja>
+	</Entry>
+	<Entry>
 		<zType>TEXT_HELPTEXT_CHARACTER_TRIBE_ETHNICITY</zType>
 		<fr>{0} : {1_tribe}</fr>
+	</Entry>
+	<Entry>
+		<zType>TEXT_HELPTEXT_CURRENT_GOVERNOR</zType>
+		<fr>link(CONCEPT_GOVERNOR) actuel : {0}</fr>
 	</Entry>
 	<Entry>
 		<zType>TEXT_HELPTEXT_POPUP_LAWS_REPLACE_LAW_DESC</zType>
@@ -1079,8 +1491,49 @@ Les ressources qui se trouvent dans le territoire d'une cité, ou qui sont trop 
 		<ru>Требуется отправить семьям {0} {singular_0:{1_luxuryLink}:{1,1_luxuryLink}:{1,7_luxuriesLink}}</ru>
 	</Entry>
 	<Entry>
+		<zType>TEXT_HINT_31</zType>
+		<fr>Les link(CONCEPT_SPECIALIST,2) de type link(CONCEPT_URBAN) peuvent être améliorés plusieurs fois, ce qui augmente grandement le rendement d'une link(CONCEPT_IMPROVEMENT) link(CONCEPT_URBAN).</fr>
+	</Entry>
+	<Entry>
+		<zType>TEXT_HINT_37</zType>
+		<fr>N'hésitez pas à utiliser l'link(YIELD_TRAINING,1) pour donner des link(CONCEPT_PROMOTION,2) à certaines de vos unités. Les unités ayant combattu et gagné de l'link(CONCEPT_XP,1) ont besoin de moins d'link(YIELD_TRAINING,1) pour leur promotion.</fr>
+	</Entry>
+	<Entry>
 		<zType>TEXT_HINT_55</zType>
 		<ru>link(CONCEPT_URBAN,8) {lowercase:link(CONCEPT_IMPROVEMENT,8)} на берегу достаточно располагаться рядом с одним {lowercase:link(CONCEPT_URBAN,4)} {lowercase:link(CONCEPT_IMPROVEMENT,4)} или городской клеткой.</ru>
+	</Entry>
+	<Entry>
+		<zType>TEXT_HINT_81</zType>
+		<de>Ihr könnt Euch das Overlay „link(CONCEPT_TRADE_NETWORK)“ ansehen, indem Ihr die icon(MAP_OVERLAY_NETWORK)-Schaltfläche neben der Minikarte betätigt. Alternativ könnt Ihr die Taste hotkey(HOTKEY_SHOW_TRADE_NETWORK) gedrückt halten.</de>
+	</Entry>
+	<Entry>
+		<zType>TEXT_HINT_88</zType>
+		<de>Alle Charaktere können maximal drei gute Merkmale wie „link(TRAIT_VIGILANT)“ sowie maximal drei schlechte Merkmale wie „link(TRAIT_GREEDY)“ aufweisen.</de>
+	</Entry>
+	<Entry>
+		<zType>TEXT_HINT_102</zType>
+		<fr>Il vous faut un link(COUNCIL_SPYMASTER) pour effectuer les missions link(MISSION_INFILTRATE), link(MISSION_SLANDER), link(MISSION_ASSASSINATE), et link(MISSION_STEAL_RESEARCH).</fr>
+	</Entry>
+	<Entry>
+		<zType>TEXT_IMPROVEMENT_MINE_HINT</zType>
+		<fr>Augmente la production de link(YIELD_IRON), qui est nécessaire pour plusieurs unités militaires. Rendement plus élevé sur les collines. Fournit de l’link(YIELD_MONEY) lorsqu’elle se trouve sur des link(RESOURCE_SILVER), link(RESOURCE_GOLD), link(RESOURCE_SALT) ou link(RESOURCE_GEM).
+Peut être développée avec un link(SPECIALISTCLASS_MINER) qui augmentera link(YIELD_TRAINING).</fr>
+	</Entry>
+	<Entry>
+		<zType>TEXT_FAMILYCLASS_CHAMPIONS_ADVICE_FOUND</zType>
+		<ru>link(FAMILYCLASS_CHAMPIONS) эффективны во всем, что касается войны. Их города обладают мощной защитой и быстро готовят военных юнитов. Любой юнит, подготовленный в городе {lowercase:link(FAMILYCLASS_CHAMPIONS,1)}, получает статус «link(EFFECTUNIT_STEADFAST)». Первый город, основанный семьей {lowercase:link(FAMILYCLASS_CHAMPIONS,1)}, ее {lowercase:link(CONCEPT_FAMILY_SEAT)}, сразу получит {lowercase:link(IMPROVEMENT_GARRISON_1,3)}, что позволит вам немедленно назначить {lowercase:link(CONCEPT_GOVERNOR,3)}.</ru>
+	</Entry>
+	<Entry>
+		<zType>TEXT_FAMILYCLASS_SAGES_ADVICE_FOUND</zType>
+		<fr>Les cités des link(FAMILYCLASS_SAGES) se concentrent sur la link(YIELD_SCIENCE,1) et les link(CONCEPT_SPECIALIST,2). Leurs cités produisent des link(YIELD_CIVICS,1) supplémentaires, ce qui les aide à construire des link(CONCEPT_SPECIALIST,2) plus rapidement, chaque link(CONCEPT_SPECIALIST) augmente la rendement de link(YIELD_SCIENCE,1) de la cité link(FAMILYCLASS_SAGES,2). Le link(CONCEPT_FAMILY_SEAT) des link(FAMILYCLASS_SAGES) est capable de mener des link(PROJECT_INQUIRY,2), ce qui accélère considérablement la recherche.</fr>
+	</Entry>
+	<Entry>
+		<zType>TEXT_GOAL_50_GOODS_TURN</zType>
+		<ja>+50 link(YIELD_FOOD,1)、link(YIELD_IRON,1)、link(YIELD_WOOD,1)、link(YIELD_STONE,1) / ターン</ja>
+	</Entry>
+	<Entry>
+		<zType>TEXT_GOAL_100_GOODS_TURN</zType>
+		<ja>+100 link(YIELD_FOOD,1)、link(YIELD_IRON,1)、link(YIELD_STONE,1)、link(YIELD_WOOD,1) / ターン</ja>
 	</Entry>
 	<Entry>
 		<zType>TEXT_GOAL_FOUR_RELIGION_SPREAD</zType>
@@ -1091,8 +1544,33 @@ Les ressources qui se trouvent dans le territoire d'une cité, ou qui sont trop 
 		<ru>link(CONCEPT_SPREAD_RELIGION,1) — {lowercase:link(CONCEPT_RELIGION)} (x8)</ru>
 	</Entry>
 	<Entry>
+		<zType>TEXT_GOAL_FOUR_GARRISON_1</zType>
+		<de>Vier link(IMPROVEMENT_GARRISON_1,2) kontrollieren</de>
+	</Entry>
+	<Entry>
+		<zType>TEXT_GOAL_FOUR_GARRISON_2</zType>
+		<de>Vier link(IMPROVEMENT_GARRISON_2,2) kontrollieren</de>
+	</Entry>
+	<Entry>
+		<zType>TEXT_GOAL_LEGENDARY_IMPROVEMENTS_2</zType>
+		<de>Eine link(IMPROVEMENT_LIBRARY_3), einen link(IMPROVEMENT_COURTHOUSE_3) und eine link(IMPROVEMENT_GARRISON_3) bauen</de>
+	</Entry>
+	<Entry>
 		<zType>TEXT_GOAL_RELIGIOUS_COUNCIL</zType>
 		<es>Controlar un link(COUNCIL_AMBASSADOR), un link(COUNCIL_CHANCELLOR) y un link(COUNCIL_SPYMASTER) que pertenezcan a tu link(CONCEPT_STATE_RELIGION)</es>
+	</Entry>
+	<Entry>
+		<zType>TEXT_GUIDE_TECH_POLIS</zType>
+		<fr>La polis est utile pour défendre et agrandir vos cités. Construire des link(PROJECT_WALLS) augmente les link(CONCEPT_HP) d'une link(CONCEPT_CITY) et peut réduire le link(YIELD_DISCONTENT,1) si vous laissez une unité de la même link(CONCEPT_FAMILY) entre les murs de la cité. Les link(IMPROVEMENT_HAMLET,2) sont des link(CONCEPT_IMPROVEMENT,2) link(CONCEPT_URBAN,4) et peuvent être construits partout sur votre link(CONCEPT_TERRITORY). Avec le temps, ils évolueront en link(IMPROVEMENT_VILLAGE,2) puis en link(IMPROVEMENT_TOWN,2) en consommant de lalink(YIELD_FOOD,1), mais en produisant des rendements améliorés d'link(YIELD_MONEY,1) surtout lorsqu'ils sont construits sur votre link(CONCEPT_TRADE_NETWORK).</fr>
+	</Entry>
+	<Entry>
+		<zType>TEXT_GUIDE_TECH_SOVEREIGNTY</zType>
+		<zh-TW>主權是導向link(UNITTRAIT_SIEGE)單位的重要步驟，也是形塑國家的實用科技。link(LAW_TYRANNY)法和link(LAW_CONSTITUTION)法是針對如何獲得資源的抉擇：透過在自家link(CONCEPT_TERRITORY)內維護軍事單位，或在城市中訓練更多link(CONCEPT_SPECIALIST,2)。</zh-TW>
+		<zh-CN>主权是导向link(UNITTRAIT_SIEGE)单位的重要步骤，也是形塑国家的实用科技。 link(LAW_TYRANNY)法和link(LAW_CONSTITUTION)法是针对如何获得资源的抉择：透过在自家link(CONCEPT_TERRITORY)内维护军事单位，或在城市中训练更多link(CONCEPT_SPECIALIST,2)。</zh-CN>
+	</Entry>
+	<Entry>
+		<zType>TEXT_GUIDE_TECH_PORTCULLIS_BONUS_MACEMAN</zType>
+		<fr>Ce bonus fournit une unité de link(UNIT_MACEMAN) link(UNITTRAIT_INFANTRY) à votre capitale, utile contre d'autres link(UNITTRAIT_INFANTRY). Si une carte bonus n'est pas récupérée lors de son apparition alors, une fois jetée, elle sera définitivement perdue et ne réapparaîtra pas.</fr>
 	</Entry>
 	<Entry>
 		<zType>TEXT_GUIDE_TECH_STIRRUPS_BONUS_HORSEMAN</zType>
@@ -1103,13 +1581,28 @@ Les ressources qui se trouvent dans le territoire d'une cité, ou qui sont trop 
 		<ru>Изучение картографии поможет вам доминировать на море, строя {lowercase:link(UNIT_TRIREME,9)}, морские юниты среднего уровня, и возводя {lowercase:link(IMPROVEMENT_HARBOR,9)} — стабильный источник {lowercase:link(YIELD_MONEY,1)}, на клетках с которыми бездействующие морские юниты могут набирать {lowercase:link(CONCEPT_XP)}. Нации с {lowercase:link(COUNCIL_SPYMASTER,4)} эта технология даст возможность выполнить задание «link(MISSION_STEAL_RESEARCH) у другой нации» — рискованный, но эффективный способ вырваться вперед в гонке технологий.</ru>
 	</Entry>
 	<Entry>
+		<zType>TEXT_GUIDE_TECH_CIMMERIAN_ARCHER_BONUS</zType>
+		<zh-TW>這項紅利可提供首都免費的link(UNIT_CIMMERIAN_ARCHER)單位。link(UNIT_CIMMERIAN_ARCHER)是link(NATION_BABYLONIA)專屬的遠程link(UNITTRAIT_INFANTRY)單位，可對目標周圍六個圖塊造成link(ATTACK_SPLASH)傷害。若不研究出現的紅利卡牌，該卡牌遭捨棄後就會永久廢棄，不會再出現。</zh-TW>
+		<zh-CN>这项红利可提供首都免费的link(UNIT_CIMMERIAN_ARCHER)单位。 link(UNIT_CIMMERIAN_ARCHER)是link(NATION_BABYLONIA)专属的远程link(UNITTRAIT_INFANTRY)单位，可对目标周围六个图块造成link(ATTACK_SPLASH)伤害。若不研究出现的红利卡牌，该卡牌遭舍弃后就会永久废弃，不会再出现。</zh-CN>
+	</Entry>
+	<Entry>
 		<zType>TEXT_VICTORY_DOUBLE_HELP</zType>
 		<ru>Победа за набор вдвое большего количества {lowercase:link(CONCEPT_VICTORY_POINT,7)}, чем у любой другой нации.
 (Необходимо также набрать не менее половины от нужного количества очков победы. Доступно только игрокам-людям.)</ru>
 	</Entry>
 	<Entry>
+		<zType>TEXT_MISSION_ADOPT_RELIGION</zType>
+		<zh-TW>接受link(CONCEPT_STATE_RELIGION)</zh-TW>
+		<zh-CN>接受link(CONCEPT_STATE_RELIGION)</zh-CN>
+	</Entry>
+	<Entry>
 		<zType>TEXT_MISSIONRESULT_CAPTURE_KILLED_DESCRIPTION</zType>
 		<fr>{CHARACTER-SUBJECT} a refusé de se rendre au groupe que vous avez envoyé pour {masculine_CHARACTER-SUBJECT:le:la} capturer, choisissant la mort plutôt que la captivité.</fr>
+	</Entry>
+	<Entry>
+		<zType>TEXT_MISSIONRESULT_ADOPT_RELIGION_EVENT</zType>
+		<zh-TW>接受link(CONCEPT_STATE_RELIGION)</zh-TW>
+		<zh-CN>接受link(CONCEPT_STATE_RELIGION)</zh-CN>
 	</Entry>
 	<Entry>
 		<zType>TEXT_EVENTOPTION_PLAYER_CONTACT_LEONIDAS_PERSIA_GIFT</zType>
@@ -1140,7 +1633,15 @@ Les ressources qui se trouvent dans le territoire d'une cité, ou qui sont trop 
 		<de>{0_character} hat sich auf wundersame Weise erholt, nachdem {masculine_0:er:sie} {lowercase:{1_trait}} wurde. {masculine_0:Seine:Ihre} gravierende Verletzung ist vollkommen verheilt!</de>
 	</Entry>
 	<Entry>
+		<zType>TEXT_TRIBE_REBELS_HELP</zType>
+		<ja>反乱者ユニットは、link(CONCEPT_FAMILY,2)のlink(CONCEPT_OPINION_FAMILY,3)が低い都市に出現します。このユニットは、出現した国のユニットを優先して攻撃します。反乱者ユニットは出身都市のlink(CONCEPT_FAMILY)を覚えています。したがって、同じlink(CONCEPT_FAMILY)のユニットはint(SAME_FAMILY_MODIFIER)%{ATTACKDEFENSE} combat modifier.)を受けることになります。</ja>
+	</Entry>
+	<Entry>
 		<zType>TEXT_UI_STATS_TOTAL_VALUE</zType>
 		<es>Valor total: {0_moneyValue}</es>
+	</Entry>
+	<Entry>
+		<zType>TEXT_YIELD_CULTURE_HELP</zType>
+		<ja>都市の{YIELD_CULTURE}文化力メーターがフルになると、有益なイベントが発生し、都市全体の{YIELD_CULTURE}文化力レベルが向上します。{YIELD_CULTURE}文化力レベルには、link(CULTURE_WEAK)、link(CULTURE_DEVELOPING)、link(CULTURE_STRONG)、link(CULTURE_LEGENDARY)の4つがあります。{YIELD_CULTURE}文化力レベルは、都市の領域に建設できるlink(CONCEPT_IMPROVEMENT,2)やlink(CONCEPT_WONDER,2)の種類、都市がlink(CONCEPT_HURRY)できるかどうかに影響します。それぞれ最低限必要なlink(CULTURE_DEVELOPING) {YIELD_CULTURE}文化力が決まっています。{YIELD_CULTURE}文化力レベルの高い都市は、link(CONCEPT_POPULATION)当たりで必要とされるlink(YIELD_FOOD,1)、link(YIELD_IRON,1)、link(YIELD_STONE,1)、link(YIELD_WOOD,1)も増加します。都市の{YIELD_CULTURE}文化力の産出量を増加させるには、link(IMPROVEMENTCLASS_SHRINE,2)やlink(IMPROVEMENTCLASS_ODEON,2)を建設する、何らかのlink(CONCEPT_SPECIALIST,2)の修練度を向上させる、link(CONCEPT_RELIGION)を都市に広める、link(LAW_EPICS)などの法律を制定するなどの方法があります。</ja>
 	</Entry>
 </Root>
