@@ -1,12 +1,16 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Home Page</title>
-  </head>
-  <body>
-    <p>Nothing to see here!</p>
-  </body>
-</html>
-
+<!doctype html><html lang="en"><head><meta charset="utf-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/><title>Old World Data Explorer</title><base href="/"/><script>(function (l) {
+        if (l.search[1] === "/") {
+          var decoded = l.search
+            .slice(1)
+            .split("&")
+            .map(function (s) {
+              return s.replace(/~and~/g, "&");
+            })
+            .join("?");
+          window.history.replaceState(
+            null,
+            null,
+            l.pathname.slice(0, -1) + decoded + l.hash
+          );
+        }
+      })(window.location);</script><link rel="icon" href="favicon.ico"><script defer="defer" src="runtime.9b137fda50d6b7e12d53.js"></script><script defer="defer" src="226.dbe3a4971350cb1b425e.js"></script><script defer="defer" src="main.fd7d99c0555555e3728c.js"></script></head><body><div id="root"></div></body></html>

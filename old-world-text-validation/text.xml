@@ -38,6 +38,10 @@
 		<es>¡Traed a {G0:esos:{G1:esos:esas}} dos idiotas de vuelta!</es>
 	</Entry>
 	<Entry>
+		<zType>TEXT_EVENTOPTION_AMBITION_FINISHED_MONOTHEISM_OPTION_REDEMPTION</zType>
+		<ru>{RELIGION-1} дарует людям {lowercase:link(THEOLOGY_REDEMPTION)}.</ru>
+	</Entry>
+	<Entry>
 		<zType>TEXT_EVENTOPTION_AMBITION_FINISHED_FOOD_400_OPTION_FOUR_FARMERS</zType>
 		<es>La producción alimentaria de {PLAYER-0} podría ser más eficiente todavía.</es>
 	</Entry>
@@ -54,12 +58,20 @@
 		<es>La producción alimentaria de {PLAYER-0} podría ser más eficiente todavía.</es>
 	</Entry>
 	<Entry>
+		<zType>TEXT_EVENTOPTION_AMBITION_FINISHED_WOOD_800_OPTION_FOUR_MARKET_2</zType>
+		<ja>この木材でlink(IMPROVEMENT_MARKET_2,2)の枠組みを作り、経済を活性化させる。</ja>
+	</Entry>
+	<Entry>
 		<zType>TEXT_EVENTOPTION_PLAYER_TRUCE_SOLEMN_PROCESSION_OPTION_TRUCE_MINISTER</zType>
 		<ru>Заключить перемирие и пригласить одного из {lowercase:{S2.PRIEST,7}} ко двору.</ru>
 	</Entry>
 	<Entry>
 		<zType>TEXT_EVENTOPTION_DEMAND_TRIBUTE_CIVICS</zType>
 		<ru>Потребовать от них прислать труды, посвященные теме {lowercase:link(YIELD_CIVICS,1)}.</ru>
+	</Entry>
+	<Entry>
+		<zType>TEXT_EVENTOPTION_LUXURY_TRIBUTE_GEM</zType>
+		<ja>link(RESOURCE_GEM)の発見に興味があるが、支払いも要求する。</ja>
 	</Entry>
 	<Entry>
 		<zType>TEXT_EVENTOPTION_PLAYER_CHOOSE_WAR_RELIGION_2</zType>
@@ -233,6 +245,12 @@ Invitar a {CHARACTER-SHORT-1}, su {G1:hijo:hija}, a pasar tiempo en palacio, pod
 Они сообщают, что {lowercase:{PLAYER-0,12}} согласились выплатить дань {lowercase:link(YIELD_FOOD,4)}, но {CHARACTER-SHORT-2} во время визита в их страну {G2:узнал:узнала}, что {CHARACTER-1} готовит против вас заговор. {CHARACTER-SHORT-3} в свою очередь {G3:допросил:допросила} {lowercase:{PLAYER-0,9}} слугу и может подтвердить слова {CHARACTER-SHORT-2,1}. Однако подробности заговора им неизвестны. </ru>
 	</Entry>
 	<Entry>
+		<zType>TEXT_EVENTSTORY_DEMAND_TRIBUTE_RALLY_CRY</zType>
+		<ja>{CHARACTER-SHORT-2}が複雑な知らせを持って帰ってきた。{PLAYER-0,3}は、我々が要求した貢ぎ物をすることに確かに同意した。しかし、{CITY-0}の街を回っている際、{CHARACTER-2}は恐ろしいほどの量の反{PLAYER-1}の説得力のある話を耳にした。
+
+link(LAW_VOLUNTEERS)の大軍が行動を起こそうとする中、{PLAYER-0,3}は我々の要求を自分たちのプロパガンダを推進する機会として利用しているように見える。{CHARACTER-SHORT-2}は、新たに増強された軍事力を考慮し、{PLAYER-0}との今後の取引に注意を払うよう提案している。 </ja>
+	</Entry>
+	<Entry>
 		<zType>TEXT_EVENTSTORY_TWOS_TROUBLE</zType>
 		<es>Últimamente, {CHARACTER-0} y {CHARACTER-1} se han vuelto inseparables. Son un incordio en palacio, todo el día correteando de un lado a otro y causando problemas con sus bromas y travesuras.
 
@@ -287,6 +305,10 @@ Die {FAMILY-1,1}, erbost und nach Rache dürstend, behaupten, sie würden sich s
 	<Entry>
 		<zType>TEXT_EVENTSTORY_DECLARE_ALLY_DEMAND_WAR</zType>
 		<ja>不誠実な{PLAYER-2,3}との戦争に疲弊した、友好同盟国{PLAYER-1}が我々に支援を要請してきた。同盟の条件に従って、同盟国を助けるために乗り出すべきだろうか？</ja>
+	</Entry>
+	<Entry>
+		<zType>TEXT_EVENTSTORY_DIPLO_OFFER_RELIGION_SPREAD_ZEALOT</zType>
+		<ja>{PLAYER-0}からの使節が{CITY-2}に到着した。彼らは、空から火が降り注ぎ鼓腸の疫病が市民を襲わぬように、{CITY-2}に{RELIGION-3}を受け入れるよう求めるlink(TRAIT_ZEALOT_ARCHETYPE,1) {CHARACTER-4}の言伝を持ってきた。 </ja>
 	</Entry>
 	<Entry>
 		<zType>TEXT_EVENTSTORY_DIPLO_OFFER_ASK_FAVOR_ZEALOT</zType>
@@ -508,6 +530,18 @@ Los guardias se abalanzan sobre {CHARACTER-SHORT-1} y logran {G1:atraparlo:atrap
 		<ru>К дворцу стекаются последователи {lowercase:{RELIGION-0,1}}. Они просят вас стать их {choice_GL:священным правителем:священной правительницей}, приняв {lowercase:link(CONCEPT_PAGAN_RELIGION,3)}. Вы готовы признать {lowercase:{RELIGION-0,3}} {lowercase:link(CONCEPT_STATE_RELIGION,4)}? Это снизит {lowercase:link(YIELD_DISCONTENT,3)} в городах с {lowercase:{RELIGION-0,4}} населением и улучшит отношения с семьями, принявшими {lowercase:{RELIGION-0,3}}.</ru>
 	</Entry>
 	<Entry>
+		<zType>TEXT_EVENTSTORY_THE_TRUE_GOD_ATEN</zType>
+		<es>Bajo tu reinado divino, la nación de {PLAYER-0} se siente más cercana a Aten, mientras el sonido de las arpas y de los himnos que alaban al disco del sol y a tu nombre divino recorren los templos. No todos están contentos con estos cambios. El disgusto y la preocupación se adueñan de {CHARACTER-SHORT-2} por la pérdida de poder de los sacerdotes y por que se asegure que tú eres {choice_GL:el único:la única} que puede escuchar la palabra de Aten.
+
+Pero, ¿acaso no eres {G0:el divino intermediario en forma de gobernante divino, además de ser el hijo de Aten, al:la divina intermediaria en forma de gobernante divina, además de ser la hija de Aten, a la} que visita en sueños? Asimismo, según los sueños que has tenido últimamente, Aten es el único dios verdadero; está por encima de la creación y es quien dota a todo de vida. 
+
+¿Vas a nombrar a Aten como el único y verdadero dios?</es>
+	</Entry>
+	<Entry>
+		<zType>TEXT_EVENTSTORY_AKHENATEN</zType>
+		<es>Te corresponde ejecutar la voluntad este dios divino, como {G0:el hijo:la hija} de Aten que eres. Un día se te ocurre que podrías cambiarte de nombre para demostrar tu devoción a Aten y tu conexión con lo divino.</es>
+	</Entry>
+	<Entry>
 		<zType>TEXT_EVENTSTORY_AGE_OF_WONDERS</zType>
 		<zh-CN><![CDATA[过去从来没有城市像{CITY-1}或{CITY-2}一样伟大，未来也不会有！我们帝国的宝地上满是不可胜数的奇观。住在遥远沙漠和冻原的部落都流传着对我国壮丽景致的惊叹。来自已知世界的大亨和大使纷纷惊艳于{CITY-1}的<p.is_sub.S1=SUBJECT_CITY_PYRAMIDS>link(IMPROVEMENT_PYRAMIDS)<p=SUBJECT_CITY_GREAT_ZIGGURAT>link(IMPROVEMENT_GREAT_ZIGGURAT)<p=SUBJECT_CITY_ORACLE>link(IMPROVEMENT_ORACLE)<p=SUBJECT_CITY_HANGING_GARDENS>link(IMPROVEMENT_HANGING_GARDENS)<p=SUBJECT_CITY_NECROPOLIS>link(IMPROVEMENT_NECROPOLIS)<p=SUBJECT_CITY_ISHTAR_GATE>link(IMPROVEMENT_ISHTAR_GATE)<p=SUBJECT_CITY_LIGHTHOUSE>link(IMPROVEMENT_LIGHTHOUSE)<p=SUBJECT_CITY_APADANA>link(IMPROVEMENT_APADANA)<p=SUBJECT_CITY_MAUSOLEUM>link(IMPROVEMENT_MAUSOLEUM)<p=SUBJECT_CITY_ACROPOLIS>link(IMPROVEMENT_ACROPOLIS)<p=SUBJECT_CITY_COLOSSUS>link(IMPROVEMENT_COLOSSUS)<p=SUBJECT_CITY_MUSAEUM>link(IMPROVEMENT_MUSAEUM)<p=SUBJECT_CITY_CIRCUS_MAXIMUS>link(IMPROVEMENT_CIRCUS_MAXIMUS)<p=SUBJECT_CITY_PANTHEON>link(IMPROVEMENT_PANTHEON)<p=SUBJECT_CITY_HAGIA_SOPHIA>link(IMPROVEMENT_HAGIA_SOPHIA)<p=SUBJECT_CITY_VIA_RECTA_SOUK>link(IMPROVEMENT_VIA_RECTA_SOUK)<else>奇观<end>、{CITY-2}的<p.is_sub.S2=SUBJECT_CITY_VIA_RECTA_SOUK>link(IMPROVEMENT_VIA_RECTA_SOUK)<p=SUBJECT_CITY_HAGIA_SOPHIA>link(IMPROVEMENT_HAGIA_SOPHIA)<p=SUBJECT_CITY_PANTHEON>link(IMPROVEMENT_PANTHEON)<p=SUBJECT_CITY_CIRCUS_MAXIMUS>link(IMPROVEMENT_CIRCUS_MAXIMUS)<p=SUBJECT_CITY_MUSAEUM>link(IMPROVEMENT_MUSAEUM)<p=SUBJECT_CITY_COLOSSUS>link(IMPROVEMENT_COLOSSUS)<p=SUBJECT_CITY_ACROPOLIS>link(IMPROVEMENT_ACROPOLIS)<p=SUBJECT_CITY_MAUSOLEUM>link(IMPROVEMENT_MAUSOLEUM)<p=SUBJECT_CITY_APADANA>link(IMPROVEMENT_APADANA)<p=SUBJECT_CITY_LIGHTHOUSE>link(IMPROVEMENT_LIGHTHOUSE)<p=SUBJECT_CITY_ISHTAR_GATE>link(IMPROVEMENT_ISHTAR_GATE)<p=SUBJECT_CITY_NECROPOLIS>link(IMPROVEMENT_NECROPOLIS)<p=SUBJECT_CITY_HANGING_GARDENS>link(IMPROVEMENT_HANGING_GARDENS)<p=SUBJECT_CITY_ORACLE>link(IMPROVEMENT_ORACLE)<p=SUBJECT_CITY_GREAT_ZIGGURAT>link(IMPROVEMENT_GREAT_ZIGGURAT)<p=SUBJECT_CITY_PYRAMIDS>link(IMPROVEMENT_PYRAMIDS)<else>奇观<end>，以及两城人民的自豪。
 
@@ -624,9 +658,14 @@ Souhaitez-vous démarrer une mission link(MISSION_HOLD_COURT) ou la remettre à 
 		<zType>TEXT_EVENTSTORY_TUTORIAL_FAMILY_ANGRY_BY_CLASS</zType>
 		<es><![CDATA[Las link(CONCEPT_FAMILY,2) tienen link(CONCEPT_FAMILY_CLASS,2) que determinan qué leyes, link(CONCEPT_LUXURY) y qué otras condiciones requieren para ser felices.
 
-<p.is_sub.S0=SUBJECT_FAMILY_LANDOWNERS>Los link(FAMILYCLASS_LANDOWNERS) —como los indignados {FAMILY-0}— necesitan tierras, por supuesto, así que quieren tener más ciudades que cualquiera de tus link(CONCEPT_FAMILY,2) y les disgusta bastante tener menos que los demás. La opinión que tengan de ti mejorará si tienen acceso a link(CONCEPT_LUXURY) como las link(RESOURCE_OLIVE) y la link(RESOURCE_HONEY). Como siempre se necesita mano de obra en sus tierras, a los link(FAMILYCLASS_LANDOWNERS) les complace la ley de link(LAW_SERFDOM).<p=SUBJECT_FAMILY_CHAMPIONS>Los {FAMILY-0} se han enfadado contigo. A los link(FAMILYCLASS_CHAMPIONS) les gusta luchar y la opinión que tengan de ti mejorará si cuentan con el mayor ejército de entre todas tus link(CONCEPT_FAMILY,2). Del mismo modo, se sentirán ofendidos si les concedes menos unidades militares que a todos los demás. La opinión que tengan de ti mejorará si tienen acceso a link(CONCEPT_LUXURY) como el link(RESOURCE_WINE) y los link(RESOURCE_DYE). A los link(FAMILYCLASS_CHAMPIONS) les complace la ley de link(LAW_VOLUNTEERS).<p=SUBJECT_FAMILY_STATESMEN>A los link(FAMILYCLASS_STATESMEN) —como los indignados {FAMILY-0}— les preocupa, obviamente, los asuntos relacionados con la opinión publica y estatal; vigilan con cautela a los líderes que no contraen matrimonio. También buscan progresar; se verán consternados si su líder no nombra a miembros del consejo para compartir el poder. La opinión que tengan de ti mejorará si tienen acceso a link(CONCEPT_LUXURY) como las link(RESOURCE_PEARL) y el link(RESOURCE_WINE). A los link(FAMILYCLASS_STATESMEN) les complace que se haya aprobado una link(LAW_CONSTITUTION).<p=SUBJECT_FAMILY_PATRONS>A los link(FAMILYCLASS_PATRONS) —como los indignados {FAMILY-0}— les impresiona sobremanera que se construyan maravillas; no obstante, no toleran mucho que el líder se encuentre en plena niñez. La opinión que tengan de ti mejorará si tienen acceso a link(CONCEPT_LUXURY) como las link(RESOURCE_GEM) y el link(RESOURCE_INCENSE). A los link(FAMILYCLASS_PATRONS) también les complace la ley de link(LAW_CALLIGRAPHY).<p=SUBJECT_FAMILY_CLERICS>Los link(FAMILYCLASS_CLERICS) —como los indignados {FAMILY-0}— no desean otra cosa que no sea difundir su fe y, por lo tanto, les complace sobremanera liderar a más súbditos que el resto de las link(CONCEPT_FAMILY,2). Asimismo, no les agradará gobernar una ciudad que no cuente con una religión. La opinión que tengan de ti mejorará si tienen acceso a link(CONCEPT_LUXURY) como el link(RESOURCE_INCENSE) y la link(RESOURCE_LAVENDER). Que se aprobara la ley del link(LAW_DIVINE_RULE) también es algo que haría que adquieran una opinión más positiva de ti.<p=SUBJECT_FAMILY_SAGES>Los link(FAMILYCLASS_SAGES) —como los indignados {FAMILY-0}— desprecian a los líderes con cónyuges de procedencia tribal; además, les complace sobremanera que sus ciudades estén protegidas. La opinión que tengan de ti mejorará si tienen acceso a link(CONCEPT_LUXURY) como la link(RESOURCE_SALT) y la (RESOURCE_LAVENDER). A los link(FAMILYCLASS_SAGES) también les complace la ley de link(LAW_FREEDOM,1).<p=SUBJECT_FAMILY_TRADERS>Los link(FAMILYCLASS_TRADERS) —como los indignados {FAMILY-0}— te apreciarán más si te aseguras de que sus ciudades estén bien conectadas; no obstante, les desagradan las ciudades que hayan sufrido daños. Dicen que es malo para el negocio. La opinión que tengan de ti mejorará si tienen acceso a link(CONCEPT_LUXURY) como las link(RESOURCE_OLIVE) y las link(RESOURCE_PEARL). A los link(FAMILYCLASS_TRADERS) les complacen, como era de esperar, las leyes de link(LAW_TRADE_LEAGUE,1) y de link(LAW_MONETARY_REFORM,1).<p=SUBJECT_FAMILY_ARTISANS>Los link(FAMILYCLASS_ARTISANS) —como los indignados {FAMILY-0}— no soportan que se interrumpa la producción y, por lo tanto, les molesta sobremanera que haya link(CONCEPT_IMPROVEMENT,2) saqueados en sus territorios. La opinión que tengan de ti mejorará si tienen acceso a link(CONCEPT_LUXURY) como las link(RESOURCE_GEM) y los link(RESOURCE_DYE). A los link(FAMILYCLASS_ARTISANS) también les complace la ley de link(LAW_GUILDS,1).<p=SUBJECT_FAMILY_RIDERS>A los link(FAMILYCLASS_RIDERS) —como los indignados {FAMILY-0}— no les molestarán las unidades hostiles que se encuentren en sus territorios; por otro lado, la opinión que tengan de ti mejorará si tienen acceso a link(CONCEPT_LUXURY) como las link(RESOURCE_FUR) y la link(RESOURCE_SALT). Asimismo, a los link(FAMILYCLASS_RIDERS) les complace la ley del link(LAW_VASSALAGE).<p=SUBJECT_FAMILY_HUNTERS>Los link(FAMILYCLASS_HUNTERS) —como los indignados {FAMILY-0}— desean que sus unidades permanezcan cerca de sus hogares; la opinión que tengan de ti mejorará si tienen acceso a link(CONCEPT_LUXURY) como las link(RESOURCE_FUR) y la link(RESOURCE_HONEY). Asimismo, a los link(FAMILYCLASS_HUNTERS) les complace la ley de link(LAW_EXPLORATION,1).<else>A los artesanos les molesta sobremanera que haya link(CONCEPT_IMPROVEMENT,2) saqueados en sus territorios. La opinión que tengan de ti mejorará si tienen acceso a link(CONCEPT_LUXURY), especialmente si hablamos de link(RESOURCE_GEM) y de link(RESOURCE_DYE). Asimismo, a los artesanos les complace la ley de link(LAW_GUILDS,1).<end>
+<p.is_sub.S0=SUBJECT_FAMILY_LANDOWNERS>Los link(FAMILYCLASS_LANDOWNERS) —como los indignados {FAMILY-0}— necesitan tierras, por supuesto, así que quieren tener más ciudades que cualquiera de tus link(CONCEPT_FAMILY,2) y les disgusta bastante tener menos que los demás. La opinión que tengan de ti mejorará si tienen acceso a link(CONCEPT_LUXURY) como las link(RESOURCE_OLIVE) y la link(RESOURCE_HONEY). Como siempre se necesita mano de obra en sus tierras, a los link(FAMILYCLASS_LANDOWNERS) les complace la ley de link(LAW_SERFDOM).<p=SUBJECT_FAMILY_CHAMPIONS>Los {FAMILY-0} se han enfadado contigo. A los link(FAMILYCLASS_CHAMPIONS) les gusta luchar y la opinión que tengan de ti mejorará si cuentan con el mayor ejército de entre todas tus link(CONCEPT_FAMILY,2). Del mismo modo, se sentirán ofendidos si les concedes menos unidades militares que a todos los demás. La opinión que tengan de ti mejorará si tienen acceso a link(CONCEPT_LUXURY) como el link(RESOURCE_WINE) y los link(RESOURCE_DYE). A los link(FAMILYCLASS_CHAMPIONS) les complace la ley de link(LAW_VOLUNTEERS).<p=SUBJECT_FAMILY_STATESMEN>A los link(FAMILYCLASS_STATESMEN) —como los indignados {FAMILY-0}— les preocupa, obviamente, los asuntos relacionados con la opinión publica y estatal; vigilan con cautela a los líderes que no contraen matrimonio. También buscan progresar; se verán consternados si su líder no nombra a miembros del consejo para compartir el poder. La opinión que tengan de ti mejorará si tienen acceso a link(CONCEPT_LUXURY) como las link(RESOURCE_PEARL) y el link(RESOURCE_WINE). A los link(FAMILYCLASS_STATESMEN) les complace que se haya aprobado una link(LAW_CONSTITUTION).<p=SUBJECT_FAMILY_PATRONS>A los link(FAMILYCLASS_PATRONS) —como los indignados {FAMILY-0}— les impresiona sobremanera que se construyan maravillas; no obstante, no toleran mucho que el líder se encuentre en plena niñez. La opinión que tengan de ti mejorará si tienen acceso a link(CONCEPT_LUXURY) como las link(RESOURCE_GEM) y el link(RESOURCE_INCENSE). A los link(FAMILYCLASS_PATRONS) también les complace la ley de link(LAW_CALLIGRAPHY).<p=SUBJECT_FAMILY_CLERICS>Los link(FAMILYCLASS_CLERICS) —como los indignados {FAMILY-0}— no desean otra cosa que no sea difundir su fe y, por lo tanto, les complace sobremanera liderar a más súbditos que el resto de las link(CONCEPT_FAMILY,2). Asimismo, no les agradará gobernar una ciudad que no cuente con una religión. La opinión que tengan de ti mejorará si tienen acceso a link(CONCEPT_LUXURY) como el link(RESOURCE_INCENSE) y la link(RESOURCE_LAVENDER). Que se aprobara la ley del link(LAW_DIVINE_RULE) también es algo que haría que adquieran una opinión más positiva de ti.<p=SUBJECT_FAMILY_SAGES>Los link(FAMILYCLASS_SAGES) —como los indignados {FAMILY-0}— desprecian a los líderes con cónyuges de procedencia tribal; además, les complace sobremanera que sus ciudades estén protegidas. La opinión que tengan de ti mejorará si tienen acceso a link(CONCEPT_LUXURY) como la link(RESOURCE_SALT) y la link(RESOURCE_LAVENDER). A los link(FAMILYCLASS_SAGES) también les complace la ley de link(LAW_FREEDOM,1).<p=SUBJECT_FAMILY_TRADERS>Los link(FAMILYCLASS_TRADERS) —como los indignados {FAMILY-0}— te apreciarán más si te aseguras de que sus ciudades estén bien conectadas; no obstante, les desagradan las ciudades que hayan sufrido daños. Dicen que es malo para el negocio. La opinión que tengan de ti mejorará si tienen acceso a link(CONCEPT_LUXURY) como las link(RESOURCE_OLIVE) y las link(RESOURCE_PEARL). A los link(FAMILYCLASS_TRADERS) les complacen, como era de esperar, las leyes de link(LAW_TRADE_LEAGUE,1) y de link(LAW_MONETARY_REFORM,1).<p=SUBJECT_FAMILY_ARTISANS>Los link(FAMILYCLASS_ARTISANS) —como los indignados {FAMILY-0}— no soportan que se interrumpa la producción y, por lo tanto, les molesta sobremanera que haya link(CONCEPT_IMPROVEMENT,2) saqueados en sus territorios. La opinión que tengan de ti mejorará si tienen acceso a link(CONCEPT_LUXURY) como las link(RESOURCE_GEM) y los link(RESOURCE_DYE). A los link(FAMILYCLASS_ARTISANS) también les complace la ley de link(LAW_GUILDS,1).<p=SUBJECT_FAMILY_RIDERS>A los link(FAMILYCLASS_RIDERS) —como los indignados {FAMILY-0}— no les molestarán las unidades hostiles que se encuentren en sus territorios; por otro lado, la opinión que tengan de ti mejorará si tienen acceso a link(CONCEPT_LUXURY) como las link(RESOURCE_FUR) y la link(RESOURCE_SALT). Asimismo, a los link(FAMILYCLASS_RIDERS) les complace la ley del link(LAW_VASSALAGE).<p=SUBJECT_FAMILY_HUNTERS>Los link(FAMILYCLASS_HUNTERS) —como los indignados {FAMILY-0}— desean que sus unidades permanezcan cerca de sus hogares; la opinión que tengan de ti mejorará si tienen acceso a link(CONCEPT_LUXURY) como las link(RESOURCE_FUR) y la link(RESOURCE_HONEY). Asimismo, a los link(FAMILYCLASS_HUNTERS) les complace la ley de link(LAW_EXPLORATION,1).<else>A los artesanos les molesta sobremanera que haya link(CONCEPT_IMPROVEMENT,2) saqueados en sus territorios. La opinión que tengan de ti mejorará si tienen acceso a link(CONCEPT_LUXURY), especialmente si hablamos de link(RESOURCE_GEM) y de link(RESOURCE_DYE). Asimismo, a los artesanos les complace la ley de link(LAW_GUILDS,1).<end>
 
 ¡En caso de que el enfado de los {FAMILY-0} no cese, puede que empiecen a aparecer unidades de rebeldes en sus ciudades!]]></es>
+		<fr><![CDATA[Les link(CONCEPT_FAMILY,2) ont des link(CONCEPT_FAMILY_CLASS,2) qui déterminent quels types de lois, de link(CONCEPT_LUXURY,2) et autres conditions permettent de les rendre heureux.
+
+<p.is_sub.S0=SUBJECT_FAMILY_LANDOWNERS>Les link(FAMILYCLASS_LANDOWNERS), comme les {FAMILY-0}, ont évidemment besoin de terres. Ils veulent posséder plus de cités que les autres link(CONCEPT_FAMILY,2) et seront particulièrement mécontents s'ils en possèdent moins. Leur opinion vous concernant s'améliorera si vous avez accès à des link(CONCEPT_LUXURY,2), comme des link(RESOURCE_OLIVE) et du link(RESOURCE_HONEY). Ils ont toujours besoin de main-d'œuvre pour leurs champs, les link(FAMILYCLASS_LANDOWNERS) sont donc favorables à la loi link(LAW_SERFDOM).<p=SUBJECT_FAMILY_CHAMPIONS>Les {FAMILY-0} sont en colère. Ce sont des link(FAMILYCLASS_CHAMPIONS). Ils aiment combattre et leur opinion vous concernant sera meilleure s'ils possèdent la plus grande armée de toutes vos link(CONCEPT_FAMILY,2). De même, ils se sentiront insultés si vous leur confiez moins d'unités militaires. Leur opinionvous concernant s'améliorera si vous avez accès à des link(CONCEPT_LUXURY,2), comme du link(RESOURCE_WINE) et de la link(RESOURCE_DYE). Les link(FAMILYCLASS_CHAMPIONS) sont favorables à la loi link(LAW_VOLUNTEERS).<p=SUBJECT_FAMILY_STATESMEN>les link(FAMILYCLASS_STATESMEN), comme la famille des {FAMILY-0}, se préoccupent évidemment des affaires d'État et de l'opinion publique et se méfient des dirigeants qui ne sont pas mariés. Ils cherchent également à évoluer personnellement et n'apprécient pas qu'un dirigeant s'accapare l'intégralité du pouvoir, sans le partager avec des membres du conseil. Ils auront une meilleure opinion de vous si vous avez accès à des link(CONCEPT_LUXURY,2), comme des link(RESOURCE_PEARL) et du link(RESOURCE_WINE). Les link(FAMILYCLASS_STATESMEN) sont favorables à l'adoption d'une link(LAW_CONSTITUTION).<p=SUBJECT_FAMILY_PATRONS>les link(FAMILYCLASS_PATRONS), comme les {FAMILY-0}, sont facilement impressionnés par les merveilles, mais tolèrent mal les enfants au pouvoir. Ils auront une meilleure opinion de vous si vous avez accès à des link(CONCEPT_LUXURY,2), comme des link(RESOURCE_GEM) et de l'link(RESOURCE_INCENSE). Les link(FAMILYCLASS_PATRONS) sont également favorables à la loi link(LAW_CALLIGRAPHY).<p=SUBJECT_FAMILY_CLERICS>Rien n'a plus d'importance aux yeux des link(FAMILYCLASS_CLERICS), comme la famille des {FAMILY-0}, que de diffuser leur foi. Ils sont également ravis de gouverner un plus grand nombre de sujets que les autres link(CONCEPT_FAMILY,2). Bien sûr, ils seront particulièrement mécontents s'ils sont amenés à gouverner une cité sans religion. Ils auront une meilleure opinion de vous si vous avez accès à des link(CONCEPT_LUXURY,2), comme de l'link(RESOURCE_INCENSE) et de la link(RESOURCE_LAVENDER). Adopter la loi link(LAW_DIVINE_RULE) aura également un effet positif sur leur opinion.<p=SUBJECT_FAMILY_SAGES>Les link(FAMILYCLASS_SAGES), comme la famille des {FAMILY-0}, regardent d'un mauvais œil les souverains ayant épousé un membre d'une tribu et aiment voir leurs cités bien protégées. Ils auront une meilleure opinion de vous si vous avez accès à des link(CONCEPT_LUXURY,2), comme du link(RESOURCE_SALT) et de la link(RESOURCE_LAVENDER). Les link(FAMILYCLASS_SAGES) sont favorables à la loi link(LAW_FREEDOM).<p=SUBJECT_FAMILY_TRADERS>Les link(FAMILYCLASS_TRADERS), comme la famille des {FAMILY-0}, auront une meilleure opinion de vous si leurs cités sont connectées, mais n'aiment pas les cités ayant subi des dégâts. C'est mauvais pour les affaires. Ils auront une meilleure opinion de vous si vous avez accès à des link(CONCEPT_LUXURY,2), comme des link(RESOURCE_OLIVE) et des link(RESOURCE_PEARL). Naturellement, les link(FAMILYCLASS_TRADERS) sont favorables aux lois link(LAW_TRADE_LEAGUE) et link(LAW_MONETARY_REFORM).<p=SUBJECT_FAMILY_ARTISANS>Les link(FAMILYCLASS_ARTISANS), comme la famille des {FAMILY-0}, ne supportent pas que la production soit à l'arrêt et sont donc révoltés par les pillages d'link(CONCEPT_IMPROVEMENT,2) sur leurs territoires. Ils auront une meilleure opinion de vous si vous avez accès à des link(CONCEPT_LUXURY,2), comme des link(RESOURCE_GEM) and de la link(RESOURCE_DYE). Les link(FAMILYCLASS_ARTISANS) sont favorables à la loi link(LAW_GUILDS).<p=SUBJECT_FAMILY_RIDERS> Les link(FAMILYCLASS_RIDERS), comme la famille des {FAMILY-0}, seront indignés par la présence d'ennemis sur leurs territoires, mais ils auront une meilleure opinion de vous si vous avez accès à des link(CONCEPT_LUXURY,2), comme de la link(RESOURCE_FUR) et du link(RESOURCE_SALT). Les link(FAMILYCLASS_RIDERS) sont favorables à la loi link(LAW_VASSALAGE).<p=SUBJECT_FAMILY_HUNTERS>Les link(FAMILYCLASS_HUNTERS), comme la famille des {FAMILY-0} souhaitent garder leurs unités près de leurs foyers. Ils auront une meilleure opinion de vous si vous avez accès à des link(CONCEPT_LUXURY,2), comme de la link(RESOURCE_FUR) et du link(RESOURCE_HONEY). Les link(FAMILYCLASS_HUNTERS) sont favorables à la loi link(LAW_EXPLORATION).<else>Les artisans sont indignés par la destruction de link(CONCEPT_IMPROVEMENT,2) sur leurs territoires. Ils auront une meilleure opinion de vous si vous avez accès à des link(CONCEPT_LUXURY,2), surtout des link(RESOURCE_GEM) et de la link(RESOURCE_DYE). Les artisans sont également favorables à la loi link(LAW_GUILDS).<end>
+
+Si vous n'apaisez pas la colère des {FAMILY-0}, des unités rebelles pourraient apparaître dans leurs villes.]]></fr>
 	</Entry>
 	<Entry>
 		<zType>TEXT_EVENTSTORY_TUTORIAL_WORKER_SELECTED</zType>
@@ -773,6 +812,12 @@ Quelle link(CONCEPT_AMBITION) allez-vous choisir comme catalyseur de ces énergi
 		<es>Después de la victoria, {CHARACTER-1} da un discurso a sus soldados y te dedica la victoria a ti, {CHARACTER-0}.
 
 Se necesita un soldado valiente para luchar, dice {G1:este:esta}, y a un general consagrado a liderar, pero la prosperidad y un futuro más brillante para la nación que surgen a partir de las batallas solo puede traerlas un líder sabio.</es>
+	</Entry>
+	<Entry>
+		<zType>TEXT_EVENTSTORY_OFF_TO_THE_RACES</zType>
+		<es>{choice_GG2:Los:Las} {UNIT-1,2} de {CITY-0}, que acaban de terminar su entrenamiento, han pedido practicar en el link(IMPROVEMENT_CIRCUS_MAXIMUS) antes de marchar hacia el campo de batalla. Después de todo, no hay mejor lugar en todo {PLAYER-0} para que nuestros jinetes entrenen.
+
+¿Debe el público ser testigo de la habilidad de nuestros hombres, o deberíamos considerar este entrenamiento como si de una batalla se tratase?</es>
 	</Entry>
 	<Entry>
 		<zType>TEXT_EVENTSTORY_BLESSINGS_FOR_THE_HEIR</zType>
@@ -1046,16 +1091,28 @@ Parece que {CHARACTER-SHORT-1} lleva la voz cantante y es a quien hay que conven
 	</Entry>
 	<Entry>
 		<zType>TEXT_EVENTSTORY_NAMED_UNIT_MESEDI</zType>
-		<es>{G0:Los:Las} {UNIT-0,2} bajo el mando de {CHARACTER-1} han demostrado sus dotes militares y, sobre todo, la lealtad incondicional que te profesan. Has depositado tu confianza en ellos como tu escolta y liderarlos es un auténtico honor que {CHARACTER-SHORT-1} disfruta sin tapujos. Sugiere que podríamos animarlos a redoblar esfuerzos honrándolos con un nombre oficial.</es>
+		<es>{choice_GG0:Los:Las} {UNIT-0,2} bajo el mando de {CHARACTER-1} han demostrado sus dotes militares y, sobre todo, la lealtad incondicional que te profesan. Has depositado tu confianza en ellos como tu escolta y liderarlos es un auténtico honor que {CHARACTER-SHORT-1} disfruta sin tapujos. Sugiere que podríamos animarlos a redoblar esfuerzos honrándolos con un nombre oficial.</es>
 	</Entry>
 	<Entry>
 		<zType>TEXT_EVENTSTORY_NAMED_UNIT_GOLDEN_SPEARMEN</zType>
-		<es>{G0:Los:Las} {UNIT-0,2} que diriges hacen guardia a tu lado a todas horas y vigilan al resto de unidades asignadas como escolta. Su lealtad absoluta es vital para su función, claro, y como muestra de honor, portan las armas y armaduras más resplandecientes.
+		<es>{choice_GG0:Los:Las} {UNIT-0,2} que diriges hacen guardia a tu lado a todas horas y vigilan al resto de unidades asignadas como escolta. Su lealtad absoluta es vital para su función, claro, y como muestra de honor, portan las armas y armaduras más resplandecientes.
 
 La gente ha empezado a llamarlos «los lanceros dorados». ¿Deberíamos reconocer este nombre como una muestra adicional de honor?</es>
 	</Entry>
 	<Entry>
 		<zType>TEXT_EVENTSTORY_SUCCESSION_THEM</zType>
+		<es><![CDATA[Llegan noticias desde el extranjero acerca de tu <p.is_sub.S0=SUBJECT_CHARACTER_FRIENDLY>amigo<p=SUBJECT_CHARACTER_MAX_ANGRY>enemigo<else>anterior gobernante<end>. {CHARACTER-1} ha muerto {random_R0:a manos de un consejero descontento:a manos de los líderes de su propia nación:a manos de su amante en un ataque de rabia y celos:a manos de unos asaltantes desconocidos:a manos de unos asesinos extranjeros:a causa de una repentina enfermedad:{G1:atropellado:atropellada} por un carruaje:durante un entrenamiento militar que salió mal:a causa de una herida infectada:y han descubierto su cuerpo {random_R1:en un pozo:al fondo de un precipicio:cortado en trozos diminutos:conservado cruelmente dentro de un barril:enterrado sin mucho cuidado en una fosa poco profunda:dentro de un gran jabalí enorme al que un cazador dio muerte:parcialmente devorado:brutalmente torturado}, semanas después de haber desaparecido:al perder el trono a manos de una facción de generales traidores:en un duelo de honor con el líder de una familia noble:{G1:aplastado:aplastada} por una muchedumbre furiosa en la capital:al caerse de un caballo:por culpa de una terrible y misteriosa enfermedad:{G1:destrozado:destrozada} por animales feroces mientras cazaba:de forma violenta, {G1:traicionado:traicionada} a manos de su guardia real: tras una pelea por la sucesión al trono:al defenderse contra los bárbaros}.
+ 
+{CHARACTER-0} ha pasado a gobernar {PLAYER-0}<p.is_sub.S0=SUBJECT_PLAYER_ASSYRIA>, recibiendo el título de {G0:rey:reina} según el contrato de sucesión realizado por {CHARACTER-SHORT-1} y sus vasallos. Muy pronto comienzan a circular leyendas sobre la fuerza y el poder de {CHARACTER-SHORT-0} por toda {PLAYER-0}.
+ <p=SUBJECT_PLAYER_BABYLONIA>{G0:Lo han nombrado:La han nombrado} {G0:rey:reina} por encima de todos los demás y tiene derecho consagrado a liderar según los sacerdotes de {CITY-0}. Muy pronto comienzan a circular inscripciones por toda {PLAYER-0} sobre la protección y la devoción de {CHARACTER-SHORT-0}.
+ <p=SUBJECT_PLAYER_CARTHAGE>{G0:Ha sido seleccionado:Ha sido seleccionada} por las casas de los nobles para servir como {G0:rey:reina} y seguir los pasos de {CHARACTER-SHORT-1} para guiar al pueblo y al senado de {PLAYER-0} hacia una nueva era.
+ <p=SUBJECT_PLAYER_EGYPT>Organizó un banquete tradicional para su primera aparición como {G0:faraón:faraona}, dando inicio a la larga cadena anual de rituales y eventos que consagran su nuevo cargo como {G0:faraón:faraona} de {PLAYER-0}.
+ <p=SUBJECT_PLAYER_GREECE>Ostentó inmediatamente el título de {G0:rey:reina} por decisión de los nobles y los generales después de la muerte de {CHARACTER-SHORT-1}. Con el trono ya bajo su dominio, {CHARACTER-SHORT-0} puede empezar a guiar a las gentes de {PLAYER-0}.
+ <p=SUBJECT_PLAYER_PERSIA>Entró en el templo de {CITY-0} y se puso las vestiduras que antes llevó {CHARACTER-SHORT-1}. Después de comer higos y leche agria como parte del ritual, {CHARACTER-SHORT-0} ha asumido su nuevo título como {G0:rey:reina} de {PLAYER-0}.
+ <p=SUBJECT_PLAYER_ROME>Tiene la facultad de liderar la poderosa {PLAYER-0} y se le ha concedido el tradicional séquito de doce guardaespaldas, que le despejan el camino mientras {CHARACTER-SHORT-0} toma posesión de su lugar como líder.
+ <p=SUBJECT_PLAYER_HITTITE>{G0:Lo han nombrado:La han nombrado} {G0:{TITLE-0}:{TITLE_F-0}}, proclamando así sus derechos sobre las tierras ancestrales {PLAYER_F-0,3}. {G0:Designado hijo:Designada hija} del dios de la tormenta, su nuevo gobierno debería ser una fuerza a tener en cuenta.
+<else>. Se ve con la capacidad necesaria como para guiar la poderosa {PLAYER-0} hacia una nueva era.
+ <end>]]></es>
 		<fr><![CDATA[Une nouvelle arrive de l'étranger, votre <p.is_sub.S0=SUBJECT_CHARACTER_FRIENDLY>ami<p=SUBJECT_CHARACTER_MAX_ANGRY>ennemi<else>compagnon de règne<end> {CHARACTER-1} est {G1:mort:morte}, {random_R0:{G1:assassiné:assassinée} par un conseiller mécontent:{G1:assassiné:assassinée} par les dirigeants de sa propre nation:{G1:assassiné:assassinée} par {G1:une amante jalouse:un amant jaloux} dans un accès de rage:{G1:tué:tuée} par un assaillant inconnu:{G1:frappé:frappée} soudainement par des assassins étrangers:{G1:affaibli:affaiblie} par une maladie soudaine:{G1:écrasé:écrasée} par un char en fuite:{G1:tué:tuée} lors d'un exercice militaire qui a mal tourné:succombant finalement à une blessure suppurante:{G1:trouvé:trouvée} {random_R1:dans un puits:au fond d'un gouffre:en plusieurs morceaux:grossièrement {G1:immergé:immergée} dans un énorme tonneau:{G1:enterré:enterée} à la hâte dans une tombe peu profonde:dans le corps d'un sanglier massif tué par un chasseur:à moitié {G1:dévoré:dévorée}:ayant manifestement été {G1:torturé:torturée}} des semaines après avoir mystérieusement disparu:{G1:renversé:renversée} par une faction de généraux corrompus:{G1:tué:tuée} dans un duel d'honneur par le chef d'une famille noble:{G1:écrasé:écrasée} par une foule en émeute dans la capitale:{G1:tué:tuée} sur le coup après être {G1:tombé:tombée} d'un cheval:{G1:décédé:décédée} après une violente et mystérieuse maladie:{G1:déchiqueté:déchiquetée} par des animaux féroces lors d'une chasse:violemment {G1:trahi:trahie} par les gardes du corps royaux:{G1:tué:tuée} au cours d'une lutte acharnée pour la succession:{G1:tué:tuée} dans une lutte acharnée pour la succession:{G1:tué:tuée} en se défendant contre des pilleurs barbares}.
 
 {CHARACTER-0} est {G0:monté:montée} sur le trône {PLAYER-0,2}<p.is_sub.S0=SUBJECT_PLAYER_ASSYRIA>, nommé {G0:roi:reine} comme le voulait le contrat de succession rédigé par {CHARACTER-SHORT-1} et ses vassaux. Des gravures de la puissance et du pouvoir {CHARACTER-SHORT-0,1} sont bientôt commandées à travers {PLAYER-0}.
@@ -1071,6 +1128,18 @@ La gente ha empezado a llamarlos «los lanceros dorados». ¿Deberíamos reconoc
 	</Entry>
 	<Entry>
 		<zType>TEXT_EVENTSTORY_SUCCESSION_THEM_ABDICATED</zType>
+		<es><![CDATA[Llegan noticias del extranjero. Sorprendentemente, {CHARACTER-1} ha renunciado a ser líder de {PLAYER-0}. {CHARACTER-0} ha pasado a gobernar {PLAYER-0}.
+ 
+ {CHARACTER-0} ha pasado a gobernar en su lugar.<p.is_sub.S0=SUBJECT_PLAYER_ASSYRIA>{CHARACTER-SHORT-0}, recibiendo el título de {G0:rey:reina} según el contrato de sucesión realizado por {CHARACTER-SHORT-1} y sus vasallos. Muy pronto comienzan a circular leyendas sobre la fuerza y el poder de {CHARACTER-SHORT-0} por toda {PLAYER-0}.
+ <p=SUBJECT_PLAYER_BABYLONIA>{G0:Lo han nombrado:La han nombrado} {G0:rey:reina} por encima de todos los demás y tiene derecho consagrado a liderar según los sacerdotes de {CITY-0}. Muy pronto comienzan a circular inscripciones por toda {PLAYER-0} sobre la protección y la devoción de {CHARACTER-SHORT-0}.
+ <p=SUBJECT_PLAYER_CARTHAGE>{G0:Ha sido seleccionado:Ha sido seleccionada} por las casas de los nobles para servir como {G0:rey:reina} y seguir los pasos de {CHARACTER-SHORT-1} para guiar al pueblo y al senado de {PLAYER-0} hacia una nueva era.
+ <p=SUBJECT_PLAYER_EGYPT>Organizó un banquete tradicional para su primera aparición como {G0:faraón:faraona}, dando inicio a la larga cadena anual de rituales y eventos que consagran su nuevo cargo como {G0:faraón:faraona} de {PLAYER-0}.
+ <p=SUBJECT_PLAYER_GREECE>Ostentó inmediatamente el título de {G0:rey:reina} por decisión de los nobles y los generales después de la muerte de {CHARACTER-SHORT-1}. Con el trono ya bajo su dominio, {CHARACTER-SHORT-0} puede empezar a guiar a las gentes de {PLAYER-0}.
+ <p=SUBJECT_PLAYER_PERSIA>Entró en el templo de {CITY-0} y se puso las vestiduras que antes llevó {CHARACTER-SHORT-1}. Después de comer higos y leche agria como parte del ritual, {CHARACTER-SHORT-0} ha asumido su nuevo título como {G0:rey:reina} de {PLAYER-0}.
+ <p=SUBJECT_PLAYER_ROME>Tiene la facultad de liderar a la poderosa {PLAYER-0} y se le ha concedido el tradicional séquito de doce guardaespaldas, que le despejan el camino mientras {CHARACTER-SHORT-0} toma posesión de su lugar como líder.
+ <p=SUBJECT_PLAYER_HITTITE>{G0:Lo han nombrado:La han nombrado} {G0:{TITLE-0}:{TITLE_F-0}}, proclamando así sus derechos sobre las tierras ancestrales {PLAYER_F-0,3}. {G0:Designado hijo:Designada hija} del dios de la tormenta, su nuevo gobierno debería ser una fuerza a tener en cuenta.
+ <else>Se ve con la capacidad necesaria como para guiar la poderosa {PLAYER-0} hacia una nueva era.
+ <end>]]></es>
 		<fr><![CDATA[Des nouvelles arrivent de l’étranger, {CHARACTER-1} a abandonné, à la surprise de tous, son rôle de {G1:dirigeant:dirigeante} de {PLAYER-0}.
 
 {CHARACTER-0} s’est {G0:élevé:élevée} au rang de {G0:dirigeant:dirigeante} de {PLAYER-0} à sa place. <p.is_sub.S0=SUBJECT_PLAYER_ASSYRIA>{CHARACTER-SHORT-0} a été {G0:nommé roi:nommée reine} conformément au contrat de succession rédigé par {CHARACTER-SHORT-1} et ses vassaux. Des récits du pouvoir et de la force {CHARACTER-SHORT-0,1} seront bientôt proclamés à travers toute la nation {PLAYER-0,7}.
@@ -1083,6 +1152,22 @@ La gente ha empezado a llamarlos «los lanceros dorados». ¿Deberíamos reconoc
 <p=SUBJECT_PLAYER_HITTITE>{G0:Il a été nommé:Elle a été nommée} {TITLE-0}, proclamant ses droits sur les terres ancestrales {PLAYER-0,7}. {G0:Réputé:Réputée} pour être l’enfant de leur dieu de la tempête, {G0:ce nouveau dirigeant:cette nouvelle dirigeante} pourrait être une figure dont il faudra se méfier.
 <else>{G0:Il a été choisi:Elle a été choisie} pour guider le peuple de la puissante nation {PLAYER-0,7} dans une nouvelle ère.
 <end>]]></fr>
+	</Entry>
+	<Entry>
+		<zType>TEXT_EVENTSTORY_SUCCESSION_THEM_ABDICATED_WAR</zType>
+		<es><![CDATA[Llegan noticias desde el extranjero. {G1:El:La} vil {CHARACTER-1} ha renunciado a ser {G1:el:la} líder de {PLAYER-0}. ¡Está claro que no pudo aguantar la presión de la link(DIPLOMACY_WAR) contra nosotros!
+ 
+{CHARACTER-SHORT-0}, su otro {G1:heredero:heredera}, ha subido al trono de {PLAYER-0} para reinar en su lugar. <p.is_sub.S0=SUBJECT_PLAYER_ASSYRIA>{CHARACTER-SHORT-0} ha sido {G0:nombrado:nombrada} {G0:{TITLE-0}:{TITLE_F-0}} según el contrato de sucesión hecho por {CHARACTER-SHORT-1} y sus vasallos. Muy pronto empieza a saberse del valor y del poder de {CHARACTER-SHORT-0} por toda la nación.
+ <p=SUBJECT_PLAYER_BABYLONIA>ha sido {G0:elegido:elegida} como {G0:rey:reina} sobre los demás y ha sido {G0:consagrado:consagrada} para reinar por los sacerdotes de {CITY-0}. Surgen dudas sobre la piedad y el afán de protección de {CHARACTER-SHORT-0} hacia su gente por toda la nación.
+ <p=SUBJECT_PLAYER_CARTHAGE>{G0:Este ha sido elegido:Esta ha sido elegida} {G0:rey:reina} por las familias nobles de la nación para seguir las andanzas de {CHARACTER-SHORT-1} como {G0:{TITLE-0}:{TITLE_F-0}} y liderar al senado y al pueblo de {PLAYER-0} en su vana lucha contra {PLAYER-2}.
+ <p=SUBJECT_PLAYER_EGYPT>{CHARACTER-SHORT-0} se presentó por primera vez como {G0:faraón:faraona} en la fiesta tradicional que daría lugar a una serie de eventos y rituales durante todo un año que tendrá para reafirmar su cargo como {G0:el nuevo faraón:la nueva faraona} de {PLAYER-0}. ¡Que su reinado sea corto por la gloria de nuestro ejército!
+ <p=SUBJECT_PLAYER_GREECE>{G0:Este:Esta} fue proclamado como {G0:rey:reina} por los nobles y los generales tras la muerte de {CHARACTER-SHORT-1}. Con el trono bajo su poder, {CHARACTER-SHORT-0} está {G0:listo:lista} para guiar a las gentes de {PLAYER-0} para luchar contra {PLAYER-2}.
+ <p=SUBJECT_PLAYER_PERSIA>{CHARACTER-SHORT-0} entró en el templo de {CITY-0} y se vistió con las prendas que antes había usado {CHARACTER-SHORT-1}. Después de seguir el ritual de comer higos y leche agria, {CHARACTER-SHORT-0} ha asumido su nuevo título como {G0:rey:reina} de {PLAYER-0}. ¿Es {G0:un:una} oponente digno o un problema menor?
+ <p=SUBJECT_PLAYER_ROME>Se ha elegido a {CHARACTER-SHORT-0} para guiar a {PLAYER-0} y ha sido {G0:investido:investida}. También se la ha asignado el séquito tradicional de doce guardaespaldas lictores. Todos le abren paso mientras ocupa su nuevo asiento como {G0:el:la} líder. No hay duda de que {G0:este:esta} demente será tan {G0:sanguinario:sanguinaria} como a quien sucede.
+ 
+<p=SUBJECT_PLAYER_HITTITE>{G0:Lo han nombrado:La han nombrado} {G0:{TITLE-0}:{TITLE_F-0}}, proclamando así sus derechos sobre las tierras ancestrales {PLAYER_F-0,3}. {G0:Designado hijo:Designada hija} del dios de la tormenta, su nuevo gobierno debería ser una fuerza a tener en cuenta.
+<else>Se ve con la capacidad necesaria como para guiar la poderosa {PLAYER-0} hacia una nueva era.
+ <end>]]></es>
 	</Entry>
 	<Entry>
 		<zType>TEXT_EVENTSTORY_POPULAR_BOARD_GAME</zType>
@@ -1106,7 +1191,7 @@ Was sollen wir mit dieser – zweifelsohne unterhaltsamen – Erfindung anfangen
 		<zType>TEXT_EVENTSTORY_LOST_IN_TRANSLATION</zType>
 		<ja>{PLAYER-1}と{PLAYER-2}が、我々に契約上の紛争の和解を申し込んできた。
 
-裕福な{PLAYER-1,1}が{PLAYER-2}で土地と牛を購入した。その際、両者の印が押された契約書が交わされた。契約書には{p.is_sub.S1=SUBJECT_PLAYER_ASSYRIA:アラム語:}{p.is_sub.S1=SUBJECT_PLAYER_BABYLONIA:アッカド語:}{p.is_sub.S1=SUBJECT_PLAYER_CARTHAGE:ポエニ語:}{p.is_sub.S1=SUBJECT_PLAYER_EGYPT:エジプト語:}{p.is_sub.S1=SUBJECT_PLAYER_GREECE:ギリシャ語:}{p.is_sub.S1=SUBJECT_PLAYER_PERSIA:ペルシャ語:}{p.is_sub.S1=SUBJECT_PLAYER_ROME:ラテン語:}{p.is_sub.S1=SUBJECT_PLAYER_HITTITE:ヒッタイト語:}で雄牛と雌牛と記されていたにも関わらず、買い手は雄牛しか手に入れることができなかった。{PLAYER-2,1}の売り手は、{p.is_sub.S1=SUBJECT_PLAYER_ASSYRIA:アラム語:}{p.is_sub.S1=SUBJECT_PLAYER_BABYLONIA:アッカド語:}{p.is_sub.S1=SUBJECT_PLAYER_CARTHAGE:ポエニ語:}{p.is_sub.S1=SUBJECT_PLAYER_EGYPT:エジプト語:}{p.is_sub.S1=SUBJECT_PLAYER_GREECE:ギリシャ語:}{p.is_sub.S1=SUBJECT_PLAYER_PERSIA:ペルシャ語:}{p.is_sub.S1=SUBJECT_PLAYER_ROME:ラテン語:}{p.is_sub.S1=SUBJECT_PLAYER_HITTITE:ヒッタイト語:}の契約書の写しには、はっきりと雄牛のみだと書かれていると言う。
+裕福な{PLAYER-1,1}が{PLAYER-2}で土地と牛を購入した。その際、両者の印が押された契約書が交わされた。契約書には{p.is_sub.S1=SUBJECT_PLAYER_ASSYRIA:アラム語:}{p.is_sub.S1=SUBJECT_PLAYER_BABYLONIA:アッカド語:}{p.is_sub.S1=SUBJECT_PLAYER_CARTHAGE:ポエニ語:}{p.is_sub.S1=SUBJECT_PLAYER_EGYPT:エジプト語:}{p.is_sub.S1=SUBJECT_PLAYER_GREECE:ギリシャ語:}{p.is_sub.S1=SUBJECT_PLAYER_PERSIA:ペルシャ語:}{p.is_sub.S1=SUBJECT_PLAYER_ROME:ラテン語:}{p.is_sub.S1=SUBJECT_PLAYER_HITTITE:ヒッタイト語:}で雄牛と雌牛と記されていたにも関わらず、買い手は雄牛しか手に入れることができなかった。{PLAYER-2,1}の売り手は、{p.is_sub.S2=SUBJECT_PLAYER_ASSYRIA:アラム語:}{p.is_sub.S2=SUBJECT_PLAYER_BABYLONIA:アッカド語:}{p.is_sub.S2=SUBJECT_PLAYER_CARTHAGE:ポエニ語:}{p.is_sub.S2=SUBJECT_PLAYER_EGYPT:エジプト語:}{p.is_sub.S2=SUBJECT_PLAYER_GREECE:ギリシャ語:}{p.is_sub.S2=SUBJECT_PLAYER_PERSIA:ペルシャ語:}{p.is_sub.S2=SUBJECT_PLAYER_ROME:ラテン語:}{p.is_sub.S2=SUBJECT_PLAYER_HITTITE:ヒッタイト語:}の契約書の写しには、はっきりと雄牛のみだと書かれていると言う。
 
 翻訳に問題があったのだろう。異なる言語の契約書にはそれぞれ別の内容が書かれているようだ！</ja>
 	</Entry>
@@ -1199,6 +1284,10 @@ El cabeza de familia, {CHARACTER-2}, se ha presentado ante ti, afirmando que los
 		<ja>（{0_idle}のユニットは、{2_turnScale}毎にlink(CONCEPT_HP)を{1_amount}link(CONCEPT_HEAL)）</ja>
 	</Entry>
 	<Entry>
+		<zType>TEXT_HELPTEXT_WIDGET_BUY_KEY</zType>
+		<es>Mantén {TEXT_HOTKEY_ALT} para comprar {0_list}: {1_money}</es>
+	</Entry>
+	<Entry>
 		<zType>TEXT_HELPTEXT_WIDGET_SPREAD_RELIGION_AS_STATE_RELIGION</zType>
 		<ru>В качестве {lowercase:link(CONCEPT_STATE_RELIGION,1)}: {0}</ru>
 	</Entry>
@@ -1223,6 +1312,58 @@ link(COUNCIL_CHANCELLOR) может отправлять {lowercase:link(MISSION
 Если вы изучили технологию «link(TECH_SPOKED_WHEEL)» и при вашем дворе есть подходящий кандидат с такой чертой, как {lowercase:link(TRAIT_ZEALOT_ARCHETYPE)}, {lowercase:link(TRAIT_JUDGE_ARCHETYPE)} или {lowercase:link(TRAIT_BUILDER_ARCHETYPE)}, то вы можете назначить {lowercase:link(COUNCIL_CHANCELLOR,3)} при помощи светящегося значка пера  icon(COUNCIL_CHANCELLOR) в правом верхнем углу экрана.</ru>
 	</Entry>
 	<Entry>
+		<zType>TEXT_HELPTEXT_LINK_HELP_TUTORIAL_FAMILY</zType>
+		<fr>L'link(CONCEPT_OPINION_FAMILY,1) est influencée par le {YIELD_DISCONTENT}link(YIELD_DISCONTENT) dans leurs cités et par les choix d'événement. Les cités gagnent du {YIELD_DISCONTENT}link(YIELD_DISCONTENT) avec le temps. Vous pouvez réduire le {YIELD_DISCONTENT}link(YIELD_DISCONTENT) en connectant vos cités au link(CONCEPT_TRADE_NETWORK), en adoptant une link(CONCEPT_STATE_RELIGION), en construisant certaines link(CONCEPT_IMPROVEMENT,2) comme les link(IMPROVEMENTCLASS_BATHS,2), et en promulgant certaines lois comme link(LAW_DIVINE_RULE) et link(LAW_TOLERANCE).
+
+Si une link(CONCEPT_FAMILY) est link(OPINIONFAMILY_ANGRY) contre vous, des unités rebelles pourraient apparaître dans leurs cités !
+
+Les link(CONCEPT_FAMILY,2) ont des link(CONCEPT_FAMILY_CLASS,2) qui déterminent quels types de lois, de link(CONCEPT_LUXURY,2) et autres conditions permettent de les rendre heureuses.
+
+Les link(FAMILYCLASS_LANDOWNERS) ont évidemment besoin de terres. Ils veulent posséder plus de cités que les autres link(CONCEPT_FAMILY,2) et seront particulièrement mécontents s'ils en possèdent moins. Leur opinion vous concernant s'améliorera si vous avez accès à des link(CONCEPT_LUXURY,2), comme des link(RESOURCE_OLIVE) et du link(RESOURCE_HONEY). Ils ont toujours besoin de main-d'œuvre pour leurs champs, les link(FAMILYCLASS_LANDOWNERS) sont donc favorables à la loi link(LAW_SERFDOM).
+	
+Les link(FAMILYCLASS_CHAMPIONS) aiment combattre et leur opinion vous concernant sera meilleure s'ils possèdent la plus grande armée de toutes vos link(CONCEPT_FAMILY,2). De même, ils se sentiront insultés si vous leur confiez moins d'unités militaires. Leur opinion vous concernant s'améliorera si vous avez accès à des link(CONCEPT_LUXURY,2), comme du link(RESOURCE_WINE) et de la link(RESOURCE_DYE). Les link(FAMILYCLASS_CHAMPIONS) sont favorables à la loi link(LAW_VOLUNTEERS).
+	
+Les link(FAMILYCLASS_STATESMEN) se préoccupent évidemment des affaires d'État et de l'opinion publique, et se méfient des dirigeants qui ne sont pas mariés. Ils cherchent également à évoluer personnellement et n'apprécient pas qu'un dirigeant s'accapare l'intégralité du pouvoir, sans le partager avec des membres du conseil. Ils auront une meilleure opinion de vous si vous avez accès à des link(CONCEPT_LUXURY,2), comme des link(RESOURCE_PEARL) et du link(RESOURCE_WINE). Les link(FAMILYCLASS_STATESMEN) sont favorables à l'adoption d'une link(LAW_CONSTITUTION).
+	
+Les link(FAMILYCLASS_PATRONS) sont facilement impressionnés par les merveilles, mais tolèrent mal les enfants au pouvoir. Ils auront une meilleure opinion de vous si vous avez accès à des link(CONCEPT_LUXURY,2), comme des link(RESOURCE_GEM) et de l'link(RESOURCE_INCENSE). Les link(FAMILYCLASS_PATRONS) sont également favorables à la loi link(LAW_CALLIGRAPHY).
+	
+Rien n'a plus d'importance aux yeux des link(FAMILYCLASS_CLERICS) que de répandre leur foi. Ils sont également ravis de gouverner un plus grand nombre de sujets que les autres link(CONCEPT_FAMILY,2). Bien sûr, ils seront particulièrement mécontents s'ils sont amenés à gouverner une cité sans religion. Ils auront une meilleure opinion de vous si vous avez accès à des link(CONCEPT_LUXURY,2), comme de l'link(RESOURCE_INCENSE) et de la link(RESOURCE_LAVENDER). Adopter la loi link(LAW_DIVINE_RULE) aura également un effet positif sur leur opinion.
+	
+Les link(FAMILYCLASS_SAGES) regardent d'un mauvais œil les souverains ayant épousé un membre d'une tribu et aiment voir leurs cités bien protégées. Ils auront une meilleure opinion de vous si vous avez accès à des link(CONCEPT_LUXURY,2), comme du link(RESOURCE_SALT) et de la link(RESOURCE_LAVENDER). Les link(FAMILYCLASS_SAGES) sont favorables à la loi link(LAW_FREEDOM).
+	
+Les link(FAMILYCLASS_TRADERS) auront une meilleure opinion de vous si leurs cités sont connectées, mais n'aiment pas les cités ayant subi des dégâts. C'est mauvais pour les affaires. Ils auront une meilleure opinion de vous si vous avez accès à des link(CONCEPT_LUXURY,2), comme des link(RESOURCE_OLIVE) et des link(RESOURCE_PEARL). Naturellement, les link(FAMILYCLASS_TRADERS) sont favorables aux lois link(LAW_TRADE_LEAGUE) et link(LAW_MONETARY_REFORM).
+	
+Les link(FAMILYCLASS_ARTISANS) ne supportent pas que la production soit à l'arrêt et sont donc révoltés par les pillages d'link(CONCEPT_IMPROVEMENT,2) sur leurs territoires. Ils auront une meilleure opinion de vous si vous avez accès à des link(CONCEPT_LUXURY,2), comme des link(RESOURCE_GEM) et de la link(RESOURCE_DYE). Les link(FAMILYCLASS_ARTISANS) sont favorables à la loi link(LAW_GUILDS).
+	
+Les link(FAMILYCLASS_RIDERS) seront indignés par la présence d'ennemis sur leurs territoires, mais ils auront une meilleure opinion de vous si vous avez accès à des link(CONCEPT_LUXURY,2), comme de la link(RESOURCE_FUR) et du link(RESOURCE_SALT). Les link(FAMILYCLASS_RIDERS) sont favorables à la loi link(LAW_VASSALAGE).
+	
+Les link(FAMILYCLASS_HUNTERS) souhaitent garder leurs unités près de leurs foyers. Ils auront une meilleure opinion de vous si vous avez accès à des link(CONCEPT_LUXURY,2), comme de la link(RESOURCE_FUR) et du link(RESOURCE_HONEY). Les link(FAMILYCLASS_HUNTERS) sont favorables à la loi link(LAW_EXPLORATION).</fr>
+		<ja>link(CONCEPT_OPINION_FAMILY,1)はその都市の{YIELD_DISCONTENT}link(YIELD_DISCONTENT,1)や、プレイヤーのイベント選択に影響されます。そして、都市の{YIELD_DISCONTENT}link(YIELD_DISCONTENT)は時間と共に増加します。{YIELD_DISCONTENT}link(YIELD_DISCONTENT)はlink(CONCEPT_TRADE_NETWORK)で都市を繋いだり、link(CONCEPT_STATE_RELIGION)を採用したり、link(IMPROVEMENTCLASS_BATHS,2)などの特定のlink(CONCEPT_IMPROVEMENT,2)を建てたり、 link(LAW_DIVINE_RULE)やlink(LAW_TOLERANCE)といった特定の法律を制定することで、下げることができます。
+
+link(CONCEPT_FAMILY)があなたに対してlink(OPINIONFAMILY_ANGRY)状態にある場合、その都市に反乱ユニットが発生する可能性があります！
+
+link(CONCEPT_FAMILY,2)にはlink(CONCEPT_FAMILY_CLASS,2)があります。それはどの法律やlink(CONCEPT_LUXURY,2)または他の条件で、彼らが幸福になるかを決めます。
+
+もちろんlink(FAMILYCLASS_LANDOWNERS)は土地を必要とし、あなたのlink(CONCEPT_FAMILY,2)の中で都市を一番多く所持することを望み、都市が一番少ない場合は不満を持ってしまいます。彼らのあなたに対する評価は、link(RESOURCE_OLIVE)、link(RESOURCE_HONEY)などのlink(CONCEPT_LUXURY,2)を与えることで改善されます。また、自分の領地に労働者を常に必要とするlink(FAMILYCLASS_LANDOWNERS)は、link(LAW_SERFDOM)の法律にも気を良くするでしょう。
+	link(FAMILYCLASS_CHAMPIONS)は争いを好みます。あなたのlink(CONCEPT_FAMILY,2)の中で最大級の軍隊を持たせていれば、あなたへの評価が改善されるでしょう。同様に、最小の軍事ユニットを与えている場合は、侮辱されていると感じるでしょう。彼らのあなたに対する評価は、link(RESOURCE_WINE)、link(RESOURCE_DYE)などのlink(CONCEPT_LUXURY)を与えることで改善されます。また、link(FAMILYCLASS_CHAMPIONS)はlink(LAW_VOLUNTEERS)の法律にも気を良くするでしょう。
+	
+link(FAMILYCLASS_STATESMEN)はもちろん国家や世論に関心があり、未婚の指導者に警戒しています。 また、彼らは出世に熱心で、彼らに権力を分け与えず、評議会の人間を任命するような指導者に失望します。彼らのあなたに対する評価は、link(RESOURCE_PEARL)、link(RESOURCE_WINE)などのlink(CONCEPT_LUXURY)を与えることで改善されます。また、link(FAMILYCLASS_STATESMEN)は、 link(LAW_CONSTITUTION)の制定にも気を良くするでしょう。
+	
+link(FAMILYCLASS_PATRONS)は特に記念物に感銘を受けます。しかし、まだ幼い指導者にはあまり寛容ではないでしょう。彼らのあなたに対する評価は、link(RESOURCE_GEM)、link(RESOURCE_INCENSE)などのlink(CONCEPT_LUXURY)を与えることで改善されます。また、link(FAMILYCLASS_PATRONS)はlink(LAW_CALLIGRAPHY)の法律にも気を良くするでしょう。
+	
+link(FAMILYCLASS_CLERICS)は信仰を広げることだけを望み、あなたのlink(CONCEPT_FAMILY,2)の中で、最も多く国民を統治下に置いていると、特に満足します。 同様に、宗教を持たない都市を統治させると機嫌が悪くなります。彼らのあなたに対する評価は、link(RESOURCE_INCENSE)、link(RESOURCE_LAVENDER)などのlink(CONCEPT_LUXURY)を与えることで改善されます。また、link(LAW_DIVINE_RULE)の制定にも気を良くするでしょう。
+	
+link(FAMILYCLASS_SAGES)は部族の配偶者を持つ指導者に軽蔑し、自身の都市が保護されることを特に好みます。彼らのあなたに対する評価は、link(RESOURCE_INCENSE)、link(RESOURCE_LAVENDER)などのlink(CONCEPT_LUXURY,2)を与えることで改善されます。また、link(FAMILYCLASS_SAGES)はlink(LAW_FREEDOM)の法律にも気を良くするでしょう。
+	
+link(FAMILYCLASS_TRADERS)は、彼らの都市が繋がりを持つことを好みます。しかし、損傷している都市には不機嫌になります。商売にならないのでしょうね。彼らのあなたに対する評価は、link(RESOURCE_OLIVE)、link(RESOURCE_PEARL)などのlink(CONCEPT_LUXURY)を与えることで改善されます。また、link(FAMILYCLASS_TRADERS)は、link(LAW_TRADE_LEAGUE)とlink(LAW_MONETARY_REFORM)の法律にも当然気を良くするでしょう。
+	
+link(FAMILYCLASS_ARTISANS)は生産を中断させられることが我慢できず、特に自身の領土のlink(CONCEPT_IMPROVEMENT,2)が略奪されることに心を傷めます。彼らのあなたに対する評価は、link(RESOURCE_GEM)、link(RESOURCE_DYE)などのlink(CONCEPT_LUXURY)を与えることで改善されます。また、link(FAMILYCLASS_ARTISANS)はlink(LAW_GUILDS)の法律にも気を良くするでしょう。
+	
+link(FAMILYCLASS_RIDERS)は、自身の領地内で敵対ユニットに苦しめられることはありません。彼らのあなたに対する評価は、link(RESOURCE_FUR)、link(RESOURCE_SALT)などのlink(CONCEPT_LUXURY)を与えることで改善されます。また、link(FAMILYCLASS_RIDERS)はlink(LAW_VASSALAGE)の法律にも気を良くするでしょう。
+	
+link(FAMILYCLASS_HUNTERS)は、ユニットを自身の都市の近くに配置することを好みます。彼らのあなたに対する評価は、link(RESOURCE_FUR)、link(RESOURCE_HONEY)などのlink(CONCEPT_LUXURY)を与えることで改善されます。また、link(FAMILYCLASS_HUNTERS)はlink(LAW_EXPLORATION)の法律にも気を良くするでしょう。</ja>
+	</Entry>
+	<Entry>
 		<zType>TEXT_HELPTEXT_LINK_HELP_TUTORIAL_SPEARMAN</zType>
 		<ja>link(UNIT_SPEARMAN)は、あなたの国が最初に使えるlink(UNITTRAIT_POLEARM)のユニットです。link(UNITTRAIT_POLEARM)ユニットは、敵のlink(UNITTRAIT_MOUNTED)ユニットに対して有利で、link(UNITTRAIT_POLEARM)のみがlink(UNITTRAIT_MOUNTED)にlink(CONCEPT_ZOC)を利用できます。また、link(UNIT_SPEARMAN,2)は貫通攻撃が可能で、対象の後ろにいるユニットに一部ダメージを与えることができます。</ja>
 	</Entry>
@@ -1233,6 +1374,19 @@ link(COUNCIL_CHANCELLOR) может отправлять {lowercase:link(MISSION
 Vous pouvez entretenir des relations diplomatiques limitées avec les link(CONCEPT_TRIBE,2), mais elles ne seront pas coordonnées comme le sont les nations adverses. Trouver une link(CONCEPT_TRIBE) faible et récupérer ses link(IMPROVEMENT_CITY_SITE,2) sera une étape importante pour la prospérité de votre nation.
 			
 Vous pourriez avoir à vaincre des link(TRIBE_BARBARIANS) pour accéder aux link(IMPROVEMENT_CITY_SITE,2). Les link(TRIBE_BARBARIANS) ne se comportent pas comme les link(CONCEPT_TRIBE,2), car vous êtes constamment en link(DIPLOMACY_WAR) avec eux. Ce sont de bonnes cibles pour commencer votre expansion. Ils sont plus simples à déloger qu'une link(CONCEPT_TRIBE) mieux organisée.</fr>
+		<ja>先住民のlink(CONCEPT_TRIBE,2)をlink(IMPROVEMENT_CITY_SITE)から追い払った後、その拠点にユニットを配置することで拠点を獲得できます。そうすれば、link(CONCEPT_TRIBE)が戻って来ることができず、他国がこの場所に都市を設立することを防げます。
+
+link(CONCEPT_TRIBE,2)は僅かな外交能力を持っています。とは言え、あなたが対立国と外交する時のようにはいかないでしょう。弱いlink(CONCEPT_TRIBE)を見つけて、link(IMPROVEMENT_CITY_SITE,2)を獲得することは、あなたの国を発展させる重要なステップです。
+			
+より多くのlink(IMPROVEMENT_CITY_SITE,2)を獲得するためには、link(TRIBE_BARBARIANS)を倒さなければいけないでしょう。彼らはlink(CONCEPT_TRIBE,2)とは違い、あなたとは常にlink(DIPLOMACY_WAR)の状態にあります。link(TRIBE_BARBARIANS)は統率の取れたlink(CONCEPT_TRIBE)よりは撃退しやすく、序盤に国を拡大する上で、link(TRIBE_BARBARIANS)は良い獲物となるのです。</ja>
+	</Entry>
+	<Entry>
+		<zType>TEXT_HELPTEXT_LINK_HELP_TUTORIAL_NATION_CONTACT</zType>
+		<ja>Old Worldでは、ライバル国が主な競争相手となります。彼らと外交を行って強力な貿易相手や同盟国とすることもできますし、link(DIPLOMACY_WAR)を布告して、領土を征服することもできます。どの国が同盟を組む価値があって、どの国を征服するべきを決めるのはあなたです。
+
+特定の難易度では、他国がすでに多くの都市、ユニット、および発展を確立した状態でゲームが開始されます。画面左上のリーダーボードにある国名にカーソルを合わせると、都市の所持数、軍隊の強さ、技術的な成長度、現在link(DIPLOMACY_WAR)中の国、link(DIPLOMACY_PEACE)の状態にある国など、ライバル国の重要な情報を確認できます。
+
+外交を行うには、link(COUNCIL_AMBASSADOR)を任命しなければなりません（link(TECH_ARISTOCRACY)を要します）。</ja>
 	</Entry>
 	<Entry>
 		<zType>TEXT_HELPTEXT_LINK_HELP_TUTORIAL_CHARIOT_SELECTED</zType>
@@ -1451,6 +1605,16 @@ Les ressources qui se trouvent dans le territoire d'une cité, ou qui sont trop 
 		<ja>{1}{true_2:x{2}}から{0}</ja>
 	</Entry>
 	<Entry>
+		<zType>TEXT_HELPTEXT_EFFECT_UNIT_HELP_LAST_STAND</zType>
+		<en-US>Unit cannot die with {gt}1 HP</en-US>
+		<es>La unidad no puede morir con {gt}1 PG</es>
+		<de>Einheit kann nicht mit {gt}1 TP sterben</de>
+		<fr>L'unité ne peut pas mourir avec {gt}1 PV</fr>
+		<zh-TW>{gt}1 生命值單位不會死亡</zh-TW>
+		<ru>Юнит не может умереть, если у него {gt}1 ОЗ</ru>
+		<zh-CN>{gt}1 生命值单位不会死亡</zh-CN>
+	</Entry>
+	<Entry>
 		<zType>TEXT_HELPTEXT_EFFECT_UNIT_ATTACK_VALUE_ITEM</zType>
 		<fr>Attaque {0_attackType}{true_1: {1}}{true_2: à {2} %}</fr>
 	</Entry>
@@ -1573,6 +1737,10 @@ Peut être développée avec un link(SPECIALISTCLASS_MINER) qui augmentera link(
 		<fr>Ce bonus fournit une unité de link(UNIT_MACEMAN) link(UNITTRAIT_INFANTRY) à votre capitale, utile contre d'autres link(UNITTRAIT_INFANTRY). Si une carte bonus n'est pas récupérée lors de son apparition alors, une fois jetée, elle sera définitivement perdue et ne réapparaîtra pas.</fr>
 	</Entry>
 	<Entry>
+		<zType>TEXT_GUIDE_TECH_SCHOLARSHIP</zType>
+		<ru>Ученость — дорога к дальнейшему экономическому и гражданскому развитию. Эта технология позволяет строить {lowercase:link(IMPROVEMENT_LIBRARY_1,9)}, {lowercase:link(IMPROVEMENT_LIBRARY_2,9)} и {lowercase:link(IMPROVEMENT_LIBRARY_3,9)}, чтобы ускорять исследования посредством {lowercase:link(YIELD_SCIENCE,1)}.</ru>
+	</Entry>
+	<Entry>
 		<zType>TEXT_GUIDE_TECH_STIRRUPS_BONUS_HORSEMAN</zType>
 		<de>Dieser Bonus gewährt Euch eine kostenlose {lowercase:link(UNITTRAIT_MOUNTED,2)} Einheit link(UNIT_HORSEMAN,7) in Eurer Hauptstadt. Wenn eine Bonuskarte auftaucht und nicht erforscht wird, wird sie beim Ablegen entsorgt und taucht nicht noch einmal auf.</de>
 	</Entry>
@@ -1591,6 +1759,50 @@ Peut être développée avec un link(SPECIALISTCLASS_MINER) qui augmentera link(
 (Необходимо также набрать не менее половины от нужного количества очков победы. Доступно только игрокам-людям.)</ru>
 	</Entry>
 	<Entry>
+		<zType>TEXT_HELPTEXT_LINK</zType>
+		<en-US><![CDATA[<lt>link="{1_data}"<gt>{0_value}<lt>/link<gt>]]></en-US>
+		<es><![CDATA[<lt>link="{1_data}"<gt>{0_value}<lt>/link<gt>]]></es>
+		<de><![CDATA[<lt>link="{1_data}"<gt>{0_value}<lt>/link<gt>]]></de>
+		<fr><![CDATA[<lt>link="{1_data}"<gt>{0_value}<lt>/link<gt>]]></fr>
+		<ja><![CDATA[<lt>link="{1_data}"<gt>{0_value}<lt>/link<gt>]]></ja>
+		<zh-TW><![CDATA[<lt>link="{1_data}"<gt>{0_value}<lt>/link<gt>]]></zh-TW>
+		<ru><![CDATA[<lt>link="{1_data}"<gt>{0_value}<lt>/link<gt>]]></ru>
+		<zh-CN><![CDATA[<lt>link="{1_data}"<gt>{0_value}<lt>/link<gt>]]></zh-CN>
+	</Entry>
+	<Entry>
+		<zType>TEXT_HELPTEXT_COLOR</zType>
+		<en-US><![CDATA[<lt>color={1_hexcode}<gt>{0_value}<lt>/color<gt>]]></en-US>
+		<es><![CDATA[<lt>color={1_hexcode}<gt>{0_value}<lt>/color<gt>]]></es>
+		<de><![CDATA[<lt>color={1_hexcode}<gt>{0_value}<lt>/color<gt>]]></de>
+		<fr><![CDATA[<lt>color={1_hexcode}<gt>{0_value}<lt>/color<gt>]]></fr>
+		<ja><![CDATA[<lt>color={1_hexcode}<gt>{0_value}<lt>/color<gt>]]></ja>
+		<zh-TW><![CDATA[<lt>color={1_hexcode}<gt>{0_value}<lt>/color<gt>]]></zh-TW>
+		<ru><![CDATA[<lt>color={1_hexcode}<gt>{0_value}<lt>/color<gt>]]></ru>
+		<zh-CN><![CDATA[<lt>color={1_hexcode}<gt>{0_value}<lt>/color<gt>]]></zh-CN>
+	</Entry>
+	<Entry>
+		<zType>TEXT_HELPTEXT_SIZE</zType>
+		<en-US><![CDATA[<lt>size={0_size}%<gt>{1_value}<lt>/size<gt>]]></en-US>
+		<es><![CDATA[<lt>size={0_size}%<gt>{1_value}<lt>/size<gt>]]></es>
+		<de><![CDATA[<lt>size={0_size}%<gt>{1_value}<lt>/size<gt>]]></de>
+		<fr><![CDATA[<lt>size={0_size}%<gt>{1_value}<lt>/size<gt>]]></fr>
+		<ja><![CDATA[<lt>size={0_size}%<gt>{1_value}<lt>/size<gt>]]></ja>
+		<zh-TW><![CDATA[<lt>size={0_size}%<gt>{1_value}<lt>/size<gt>]]></zh-TW>
+		<ru><![CDATA[<lt>size={0_size}%<gt>{1_value}<lt>/size<gt>]]></ru>
+		<zh-CN><![CDATA[<lt>size={0_size}%<gt>{1_value}<lt>/size<gt>]]></zh-CN>
+	</Entry>
+	<Entry>
+		<zType>TEXT_HELPTEXT_SIZE_AND_COLOR</zType>
+		<en-US><![CDATA[<lt>size={0_size}%<gt><lt>color={1_hexcode}<gt>{2_value}<lt>/color<gt><lt>/size<gt>]]></en-US>
+		<es><![CDATA[<lt>size={0_size}%<gt><lt>color={1_hexcode}<gt>{2_value}<lt>/color<gt><lt>/size<gt>]]></es>
+		<de><![CDATA[<lt>size={0_size}%<gt><lt>color={1_hexcode}<gt>{2_value}<lt>/color<gt><lt>/size<gt>]]></de>
+		<fr><![CDATA[<lt>size={0_size}%<gt><lt>color={1_hexcode}<gt>{2_value}<lt>/color<gt><lt>/size<gt>]]></fr>
+		<ja><![CDATA[<lt>size={0_size}%<gt><lt>color={1_hexcode}<gt>{2_value}<lt>/color<gt><lt>/size<gt>]]></ja>
+		<zh-TW><![CDATA[<lt>size={0_size}%<gt><lt>color={1_hexcode}<gt>{2_value}<lt>/color<gt><lt>/size<gt>]]></zh-TW>
+		<ru><![CDATA[<lt>size={0_size}%<gt><lt>color={1_hexcode}<gt>{2_value}<lt>/color<gt><lt>/size<gt>]]></ru>
+		<zh-CN><![CDATA[<lt>size={0_size}%<gt><lt>color={1_hexcode}<gt>{2_value}<lt>/color<gt><lt>/size<gt>]]></zh-CN>
+	</Entry>
+	<Entry>
 		<zType>TEXT_MISSION_ADOPT_RELIGION</zType>
 		<zh-TW>接受link(CONCEPT_STATE_RELIGION)</zh-TW>
 		<zh-CN>接受link(CONCEPT_STATE_RELIGION)</zh-CN>
@@ -1598,6 +1810,10 @@ Peut être développée avec un link(SPECIALISTCLASS_MINER) qui augmentera link(
 	<Entry>
 		<zType>TEXT_MISSIONRESULT_CAPTURE_KILLED_DESCRIPTION</zType>
 		<fr>{CHARACTER-SUBJECT} a refusé de se rendre au groupe que vous avez envoyé pour {masculine_CHARACTER-SUBJECT:le:la} capturer, choisissant la mort plutôt que la captivité.</fr>
+	</Entry>
+	<Entry>
+		<zType>TEXT_MISSIONRESULT_TRIBE_END_ALLIANCE_EVENT</zType>
+		<fr>Mettre fin à l’link(CONCEPT_ALLIANCE_TRIBE)</fr>
 	</Entry>
 	<Entry>
 		<zType>TEXT_MISSIONRESULT_ADOPT_RELIGION_EVENT</zType>
