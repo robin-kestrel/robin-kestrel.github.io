@@ -1564,11 +1564,11 @@ Les ressources qui se trouvent dans le territoire d'une cité, ou qui sont trop 
 奢侈品來自以下資源：
 {bullet}link(RESOURCE_SALT)
 {bullet}link(RESOURCE_GEM)
-{bullet}linklink(RESOURCE_FUR)
+{bullet}link(RESOURCE_FUR)
 {bullet}link(RESOURCE_HONEY)
 {bullet}link(RESOURCE_INCENSE)
 {bullet}link(RESOURCE_LAVENDER)
-{bullet}link(RESOURCE_OLIVE)link
+{bullet}link(RESOURCE_OLIVE)
 {bullet}link(RESOURCE_WINE)
 {bullet}link(RESOURCE_DYE)
 {bullet}link(RESOURCE_PEARL)</zh-TW>
@@ -1579,11 +1579,11 @@ Les ressources qui se trouvent dans le territoire d'une cité, ou qui sont trop 
 奢侈品来自以下资源：
 {bullet}link(RESOURCE_SALT)
 {bullet}link(RESOURCE_GEM)
-{bullet}linklink(RESOURCE_FUR)
+{bullet}link(RESOURCE_FUR)
 {bullet}link(RESOURCE_HONEY)
 {bullet}link(RESOURCE_INCENSE)
 {bullet}link(RESOURCE_LAVENDER)
-{bullet}link(RESOURCE_OLIVE)link
+{bullet}link(RESOURCE_OLIVE)
 {bullet}link(RESOURCE_WINE)
 {bullet}link(RESOURCE_DYE)
 {bullet}link(RESOURCE_PEARL)</zh-CN>
