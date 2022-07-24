@@ -13,6 +13,10 @@
 		<ja>link(RESOURCE_GEM)の発見に興味があるが、支払いも要求する。</ja>
 	</Entry>
 	<Entry>
+		<zType>TEXT_EVENTOPTION_HOLD_COURT_NEW_COURTIER_OPTION_0</zType>
+		<de>{CHARACTER-2} soll unverzüglich als link(COURTIER_MINISTER,{G2}) eingesetzt werden. Scheute keine Kosten und Mühen!</de>
+	</Entry>
+	<Entry>
 		<zType>TEXT_EVENTSTORY_THE_CHARITY_OF_AHURA_MAZDA</zType>
 		<fr>Les enseignements du {RELIGION-1} encouragent l'humilité et la générosité, même de la part {G3:d'un:d'une} {TITLE-3}. {CHARACTER-2} a envoyé un mage prétendant détenir un message d'Ahura Mazda, vous demandant des dons de nourriture tirés des réserves royales.</fr>
 	</Entry>
